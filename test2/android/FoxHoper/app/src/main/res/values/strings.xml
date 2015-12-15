@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string name="app_name">FoxHopr</string>
+    <string name="application_name">FoxHopr</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <!-- Left menu  -->
+    <string name="str_view_profile">View Profile</string>
+    <string name="str_dashboard">Dashboard</string>
+    <string name="str_team">Team</string>
+    <string name="str_referrals">Referrals</string>
+    <string name="str_edit_referrals">Edit Referral</string>
+    <string name="str_messages">Messages</string>
+    <string name="str_events">Events</string>
+    <string name="str_contacts">Contacts</string>
+    <string name="str_reviews">Reviews</string>
+    <string name="str_Setting">Settings</string>
+    <string name="str_Video">Videos</string>
+    <string name="str_Suggestion">Suggestions</string>
+    <string name="str_Account">Account</string>
+    <string name="str_metting">Meeting</string>
+    <string name="str_people">People</string>
+    <string name="str_webcast">Webcast</string>
+    <string name="str_customer">Customer</string>
+    <string name="str_account">Account</string>
+    <string name="str_help">Help</string>
+    <string name="str_logout">Logout</string>
+
+    <!-- Login Screen  -->
+    <string name="str_login">LOGIN</string>
+    <string name="str_password">Password</string>
+    <string name="str_login_heading">Login with FOX</string>
+    <string name="str_username">Username</string>
+    <string name="str_email">Email </string>
+    <string name="str_new_to_foxhoper">NEW TO FOXHOPR ? SIGN UP</string>
+    <string name="str_forgot_password_q_mark"><u>Forgot Your Password?</u></string>
+    <string name="str_forgot_password_mark">Forgot Your Password?</string>
+
+    <!-- Forgot Screen  -->
+    <string name="str_forgot_password">Forgot Password</string>
+    <string name="str_submit">Submit</string>
+    <string name="str_send">Send</string>
+    <string name="str_forgot_password_heading">Forgot Password with FOX</string>
+    <string name="str_hoper">HOPR</string>
+
+    <!-- Welcome Screen  -->
+    <string name="str_welcome">Welcome</string>
+
+    <!-- Upgrade Member ship Screen  -->
+    <string name="str_upgrade_membership">Upgrade Membership</string>
+
+    <!--Member listing page -->
+    <string name="str_select_all">Select All</string>
+    <string name="str_clear_all">Clear Selection</string>
+    <string name="str_done">Done</string>
+    <string name="str_team_members">Team Members Selected</string>
+
+    <!-- Wrng message -->
+    <string name="wrng_str_empty_requried_field">Highlighted field(s) are required.</string>
+    <string name="wrng_str_password_length">Password should be minimum 6 characters and maximum 20 characters long</string>
+    <string name="wrng_str_password_space_not_allowed">Space is not allowed in password</string>
+    <string name="wrng_str_password_not_match">Password does not match</string>
+    <string name="wrng_str_invalid_email">Please enter vaild email address.</string>
+    <string name="wrng_str_invalid_url">Please enter vaild URL.</string>
+
+    <string name="wrng_group_fulled">This group is no longer available. Please select another group</string>
+    <string name="wrng_str_server_error">Error processing your request, please try again.</string>
+    <string name="wrng_str_lost_internet_error">Please check your internet connectivity.</string>
+
+    <string name="wrng_str_logout_app">Are you sure you want to logout from app.</string>
+    <string name="wrng_str_no_record_select">Please select at least one record.</string>
+    <string name="wrng_str_no_result">No results found</string>
+    <string name="wrng_str_no_record">No record found</string>
+
+    <string name="wrng_str_fname_max_limit">First name can have maximum 20 characters.</string>
+    <string name="wrng_str_partner_name_max_limit">Partner name can have maximum 20 characters</string>
+    <string name="wrng_str_fname_invalid">First name can contain period, space and hyphen only including alphabets.</string>
+    <string name="wrng_str_partner_name_invalid">Partner name can contain period, space and hyphen only including alphabets</string>
+
+    <string name="wrng_str_lname_max_limit">Last name can have maximum 20 characters.</string>
+    <string name="wrng_str_lname_invalid">Last name can contain period, space and hyphen only including alphabets.</string>
+
+    <string name="wrng_str_companyname_max_limit">Company name can have maximum 35 characters.</string>
+    <string name="wrng_str_companyname_invalid">Company name can contain alphanumeric characters, comma , space, period and hyphen.</string>
+
+    <string name="wrng_str_jobtitle_max_limit">Job title can have maximum 35 characters.</string>
+    <string name="wrng_str_jobtitle_invalid">Only alphabets, space, period, hyphen, at the rate (@) and ampersand are allowed.</string>
+
+    <string name="wrng_str_address_max_limit">Address can have maximum 60 characters.</string>
+    <!--<string name="wrng_str_address_invalid">Address can contain alphanumeric characters, space, period, parenthesis and hyphen.</string>-->
+    <string name="wrng_str_address_invalid">Address can contain alphanumeric characters, space, period, comma, parenthesis and hyphen.</string>
+    <string name="wrng_str_officePhone_max_limit">Office phone can have maximum 15 characters.</string>
+    <string name="wrng_str_city_max_limit">City can have maximum 35 characters.</string>
+    <string name="wrng_str_city_invalid">City can contain alphabets, period, space and hyphen.</string>
+
+
+    <string name="wrng_str_zipcode_max_limit">ZIP Code should be minimum 3 and maximum 12 characters long.</string>
+    <string name="wrng_str_zipcode_invalid">ZIP Code can contain alphanumeric characters, space, period and hyphen.</string>
+
+    <string name="wrng_str_mobile_phone_max_limit">Mobile phone can have maximum 15 characters.</string>
+    <string name="wrng_str_monetary_value_max_limit">Monetary value can have maximum 11 characters.</string>
+
+    <string name="wrng_str_message_max_limit">Message can have maximum 500 characters.</string>
+
+    <string name="wrng_str_file_format_check">File format not supported.</string>
+    <string name="wrng_str_file_format_edit_profile">Only JPG/JPEG and PNG files allowed</string>
+    <string name="wrng_str_file_too_large">File size too large.</string>
+    <string name="wrng_str_file_validation_large">File size should be less than 2 MB</string>
+    <string name="wrng_str_attachment_exceed_limit">Attachments cannot exceed 10 MB.</string>
+
+    <string name="wrng_str_subject_invalid">Subject can contain alphanumeric characters, space, period and hyphen.</string>
+    <string name="wrng_str_subject_max_limit">Subject can have maximum 65 characters.</string>
+    <string name="wrng_str_comment_max_limit">Only 350 characters allowed</string>
+    <string name="wrng_str_message_body_max_limit">Message can have maximum 5000 characters.</string>
+    <string name="wrng_str_comment_body_max_limit">Only 300 characters allowed.</string>
+    <string name="wrng_str_suggestions_body_max_limit">Only 500 characters allowed.</string>
+
+    <string name="wrng_str_about_me_max_limit">About Me can have maximum 500 characters.</string>
+    <string name="wrng_str_services_max_limit">Services can have maximum 500 characters.</string>
+    <string name="wrng_str_company_description_max_limit">Company Description can have maximum 500 characters.</string>
+
+    <!--Success Messages-->
+    <string name="str_sccess_delete_message">Referral(s) has been moved to received archive successfully</string>
+    <string name="str_sccess_delete_inbox_message">Message(s) has been moved to inbox archive successfully</string>
+    <string name="str_sccess_read_inbox_message">Selected message(s) have been marked as read</string>
+    <string name="str_sccess_unread_inbox_message">Selected message(s) have been marked as unread</string>
+    <string name="str_sccess_delete_sent_message">Message(s) has been moved to sent archive successfully</string>
+    <string name="str_sccess_delete_contact_message">Contact(s) has been permanently deleted successfully</string>
+
+    <string name="str_sent_sccess_delete_message">Referral(s) has been moved to sent archive successfully</string>
+
+    <string name="str_edit_success">Referral has been updated successfully</string>
+    <string name="str_contact_edit_success">Contact has been updated successfully</string>
+
+    <string name="str_sccess_archive_delete_message">Referral(s) has been permanently deleted successfully</string>
+    <string name="str_sccess_archive_delete_messages">Message(s) has been permanently deleted successfully</string>
+
+
+    <!--Alert Message-->
+    <string name="alert_str_delete_message">Do you want to archive the referral(s)?</string>
+    <string name="alert_str_delete_messages">Do you want to archive the message(s)?</string>
+    <string name="alert_str_delete_contacts">Do you want to permanently delete the contact(s)?</string>
+    <string name="alert_str_archive_delete_message">Do you want to permanently delete the referral(s)?</string>
+    <string name="alert_str_archive_delete_messages">Do you want to permanently delete the message(s)?</string>
+    <string name="alert_str_group_confirmation">Do you want to join the group?</string>
+    <string name="alert_str_thanks_message">Thanks for being the part of FoxHopr community</string>
+
+    <string name="str_reviews_text">review(s)</string>
+
+
+
+    <!--String Text for Referal search layout-->
+    <string name="str_cancel">CANCEL</string>
+    <string name="str_searchhint">Search</string>
+
+    <string name="str_referrel_asc">Referral (A to Z)</string>
+    <string name="str_referrel_desc">Referral (Z to A)</string>
+    <string name="str_from_asc">From (A to Z)</string>
+    <string name="str_from_desc">From (Z to A)</string>
+    <string name="str_date_asc">Date (Newest First)</string>
+    <string name="str_date_desc">Date (Oldest First)</string>
+    <string name="str_status_asc">Status (A to Z)</string>
+    <string name="str_status_desc">Status (Z to A)</string>
+    <string name="str_value_asc">Value (High to Low)</string>
+    <string name="str_value_desc">Value (Low to High)</string>
+
+    <!--for contact search-->
+    <string name="str_contact_asc">Contact Name (A to Z)</string>
+    <string name="str_contact_desc">Contact Name (Z to A)</string>
+
+    <string name="str_profession_asc">Job Title (A to Z)</string>
+    <string name="str_profession_desc">Job Title (Z to A)</string>
+
+
+    <string name="str_added_on_asc">Added On (Newest First)</string>
+    <string name="str_added_on_desc">Added On (Oldest First)</string>
+
+    <string name="str_name_asc">Name (A to Z)</string>
+    <string name="str_name_desc">Name (Z to A)</string>
+
+    <string name="str_company_asc">Company (A to Z)</string>
+    <string name="str_complay_desc">Company (Z to A)</string>
+
+    <string name="str_email_asc">Email (A to Z)</string>
+    <string name="str_email_desc">Email (Z to A)</string>
+
+    <string name="str_created_date_asc">Created Date (Newest First)</string>
+    <string name="str_created_date_desc">Created Date (Oldest First)</string>
+
+    <string name="str_sent_on_date_asc">Sent On (Newest First)</string>
+    <string name="str_sent_on_date_desc">Sent On (Oldest First)</string>
+
+    <string name="str_partner_email_asc">Partner Email (A to Z)</string>
+    <string name="str_partner_email_desc">Partner Email (Z to A)</string>
+
+    <string name="str_partner_name_asc">Partner Name (A to Z)</string>
+    <string name="str_partner_name_desc">Partner Name (Z to A)</string>
+
+    <string name="str_referral_amount_asc">Referral Amount (High to Low)</string>
+    <string name="str_referral_amount_desc">Referral Amount (Low to High)</string>
+
+
+    <string name="str_profession_asc_value">job_title</string>
+    <string name="str_profession_desc_value">job_title</string>
+
+    <string name="str_email_asc_value">email</string>
+    <string name="str_email_desc_value">email</string>
+
+    <string name="str_partner_email_asc_value">invitee_email</string>
+    <string name="str_partner_email_desc_value">invitee_email</string>
+
+    <string name="str_partner_name_asc_value">invitee_name</string>
+    <string name="str_partner_name_desc_value">invitee_name</string>
+
+    <string name="str_partner_status_asc_value">status</string>
+    <string name="str_partner_status_desc_value">status</string>
+
+
+    <string name="str_company_asc_value">company</string>
+    <string name="str_company_desc_value">company</string>
+
+
+    <string name="str_referral_amount_asc_value">referral_amount</string>
+    <string name="str_referral_amount_desc_value">referral_amount</string>
+
+    <!-- Referral : first_name, From: fname, Date : created, Satus : 'referral_status', value: 'monetary_value'.-->
+    <string name="str_referrel_asc_value">first_name</string>
+    <string name="str_referrel_desc_value">first_name</string>
+    <string name="str_from_asc_value">fname</string>
+    <string name="str_from_desc_value">fname</string>
+    <string name="str_date_asc_value">created</string>
+    <string name="str_total_value">total_member</string>
+    <string name="str_date_desc_value">created</string>
+    <string name="str_status_asc_value">referral_status</string>
+    <string name="str_status_desc_value">referral_status</string>
+    <string name="str_value_asc_value">monetary_value</string>
+    <string name="str_value_desc_value">monetary_value</string>
+    <string name="str_subject_asc_value">subject</string>
+    <string name="str_subject_desc_value">subject</string>
+
+    <!--for sent Message-->
+    <string name="str_recipient_users_asc_value">recipient_users</string>
+    <string name="str_recipient_users_desc_value">recipient_users</string>
+
+    <!--String Text for Referal sent search layout-->
+    <string name="str_to_asc">To (A to Z)</string>
+    <string name="str_to_desc">To (Z to A)</string>
+
+    <string name="str_subject_asc">Subject (A to Z)</string>
+    <string name="str_subject_desc">Subject (Z to A)</string>
+
+    <string-array name="string_search_sort_type">
+        <item>Referral (A to Z)</item>
+        <item>Referral (Z to A)</item>
+        <item>From (A to Z)</item>
+        <item>From (Z to A)</item>
+        <item>Date (Newest First)</item>
+        <item>Date (Oldest First)</item>
+        <item>Status (A to Z)</item>
+        <item>Status (Z to A)</item>
+        <item>Value (High to Low)</item>
+        <item>Value (Low to High)</item>
+    </string-array>
+    <string name="title_activity_notification_list">NotificationListActivity</string>
+
+    //Sort_data is : Referral : fname, From: first_name, Date : created, Satus : 'referral_status',
+    value: 'monetary_value'
+    // Sort direction : ASC/DESC
+
+    <string name="notification_referrel">You have received %1$s new referral(s)</string>
+    <string name="notification_message">You have received %1$s new message(s)</string>
+    <string name="notification_title">NOTIFICATIONS</string>
+    <string name="title_activity_referrel_details">ReferrelDetailsActivity</string>
+    <string name="title_activity_sent_referrel_details">SentReferrelDetailsActivity</string>
+    <string name="title_activity_receive_archive_referrel_details">ReceivedArchiveDetailsActivity</string>
+    <string name="title_activity_sent_archive_referrel_details">SentArchiveDetailsActivity</string>
+    <string name="title_activity_referrel_received_details">ReferrelReceivedDetailsActivity</string>
+
+    <!--rererrals details-->
+    <string name="str_referral_status">Referral Status:</string>
+    <string name="str_referral_value">Monetary Value:</string>
+    <string name="str_want_contact">Want Contact:</string>
+    <string name="str_sender_message">Message from Sender </string>
+    <string name="str_comment_message">Chat with Member</string>
+    <string name="str_post_text">POST</string>
+    <string name="not_applicable">NA</string>
+    <string name="not_comment_blanck">Comment field cannot be left blank</string>
+    <string name="not_message_sender">No message from sender</string>
+    <string name="not_attachment">No attachments found.</string>
+    <string name="posted_on">Posted on</string>
+    <string name="not_comment">No comments found.</string>
+
+    <string name="is_login_text">no</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_message_compose">MessageComposeActivity</string>
+    <string name="title_activity_received_rererral_edit">ReceivedRererralEditActivity</string>
+
+    <!--Refferral Status-->
+    <string-array name="string_referral_status">
+        <item>Received</item>
+        <item>Contacted</item>
+        <item>Proposal</item>
+        <item>Success</item>
+        <item>Kaput</item>
+    </string-array>
+        <string name="title_activity_message_inbox_details">MessageInboxDetailsActivity</string>
+        <string name="title_activity_contact_add">ContactAddActivity</string>
+        <string name="title_activity_contact_edit">ContactEditActivity</string>
+        <string name="title_activity_contact_detils">ContactDetilsActivity</string>
+        <string name="title_activity_team_details">TeamDetailsActivity</string>
+        <string name="title_activity_select_contact">SelectContactListActivity</string>
+        <string name="title_activity_group_selection">GroupSelectionActivity</string>
+        <string name="title_activity_meeting_selection">SelectMeetingDayActivity</string>
+        <string name="title_activity_profile_edit">SelectMeetingDayActivity</string>
+        <string name="title_activity_purchase_receipt">PurchaseReceipt</string>
+        <string name="title_activity_SocialDetails">Configure Post</string>
+        <string name="title_activity_webcast_player">Webcast player</string>
+
+    <!--group selection-->
+    <string name="str_local">Local</string>
+    <string name="str_global">Global</string>
+
+    <string name="profile_percentage">Profile Completion : %1$s Complete  </string>
+    <string name="profile_next_suffle">Next Shuffle %1$s </string>
+
+</resources>

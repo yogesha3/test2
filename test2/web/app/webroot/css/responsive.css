@@ -1,0 +1,556 @@
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1920px) { 
+ 	.navbar-collapse1.collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding-bottom: 0;
+}
+}
+
+
+
+@media (max-width: 1024px){
+	.close_btn_div{ right:15px}
+.effect1{ height:88px}
+
+.app-download{ width:114%}
+#Meet-share-grow p{ font-size:23px;}
+.Reason5-decription p br{ display:none}
+.effect3{ height:175px}
+.width-25pr{ height:175px}
+.effect4 {height: 175px;}
+.testimonial-right h2 br{ display:none; padding-left:20px;padding-right:20px}
+.testimonial-right h2{  padding-left:20px;padding-right:20px}
+.testimonial-right { padding:20px 0;}
+.video_div{ margin-top:45px;}
+.blank2{ height:87px !important}
+.rating_icon i{ font-size:12px;}
+ /******************* inner pages responsive start*************/
+ 
+ .apply{ margin-right:15%}
+ .data_table{ width:100%}
+   .advertisement img{ width:100%}
+   
+   .twitter_icon {color: #709cd2; font-size: 157px !important;  padding: 0 31px 8px;}
+   
+ .megamenu .navbar-default .navbar-nav > li > a{ padding: 10px 4.5px;}
+ .left_video img{ width:100%}
+
+
+}
+@media (max-width: 990px){
+.div{ width:auto}	
+	
+	.navbar-fixed-top{ padding:0}
+	navbar-shrink .logo{ padding:0;width:50%;}
+	.navbar-fixed-top.navbar-shrink .navbar-brand{ padding:0}
+.navbar-brand{ float:left; padding:0 }
+.navbar .navbar-nav{ margin-top:0px}
+.navbar-brand img { width:50%;padding:10px 0 10px 10px}	
+header .intro-text .name{ font-size: 48px;line-height: 53.34px;}
+.video_div{ float:left; margin-top:30px}
+header .intro-text .skills{ font-size:34px !important;}
+.joinus{ margin-top:20px}
+header .container {padding-bottom: 10px;}
+#Meet-share-grow{ padding-top:30px; padding-bottom:30px}
+.become-a-foxhopr{ padding-top:20px; padding-bottom:20px}
+.foxhopr-bcome-member-div{ margin-top:30px}
+.learn_more{ margin:20px 0}
+.become-a-foxhopr h2{  font-size: 30px;}
+.become-a-foxhopr h3{ font-size:25px}
+.become-foxhopr-btn{ font-size:19px; padding: 15px 40px 18px;}
+.foxhopr_name{ font-size:17px;}
+.video_section_bottom{ padding-bottom:20px}
+.effect1{ height:227px;}
+.width-half{ width:100%}
+.effect3{height:453px}
+
+.padd-right0{ padding-right:15px}
+.images1{ width:330px !important}
+.clearboth{ clear:both; margin-top:30px}
+.width-25pr{ width:50%}
+.padd-left0{ padding-left:15px}
+.testimonial-right{  padding: 17.5px 0;}
+.testimonial-right h2{ font-size:22px}
+.Reason5{ padding-top:20px}
+.Reason5-decription p{ padding-bottom:30px}
+.subscribe_btn{ font-size: 18px; padding: 8.5px 14px;}
+.logo_bottom{ width:100%}
+#contact{ padding-top:20px; padding-bottom:20px}
+footer h3{ margin-bottom: 10px; margin-top: 20px;}
+.app-download{ width:100%}
+.social_icon{ float:left}
+.social_icon li{ padding-left:0}
+.btn-social{ margin-top:0}
+.padd_clear{ padding:0px 15px}
+.bg-anywhere{ padding:0px 15px}
+.close_btn_div { right: 0; top: -52px; width: 100%;}
+.learn_more_btn{ float:left; margin-top:10px; margin-left:15px}
+#closebtn{ float:left}
+.arrow-right{ display:none}
+.popup-border{ border:none}
+.become_member img{  display: block; margin-left: auto;margin-right: auto;}
+.become-member-chart p{ text-align:center}
+.become-member-chart h2{ text-align:center}
+.joinus{ text-align:center}
+.navbar-default .navbar-nav > li > a{ padding-left:6px;padding-right:6px}
+.megamenu .navbar-default .navbar-nav > li > a{ padding: 10px 5.5px;}
+
+.navbar-brand img { padding: 10px 0 10px 10px;width: 50%;}
+.Reason5-decription p br{ display:none}
+.Reason5-decription p{ padding:0 176px}
+#Meet-share-grow p { font-size: 17px;}
+.navbar-fixed-top.navbar-shrink .navbar-brand .logo{transition: all 0.35s ease 0s;width: 55%;}
+header .intro-text .name{ text-align:center}
+header .intro-text .skills{ width:100%; text-align:center}
+header .container{padding-top:120px !important}
+
+.main-menu{ width:43%}
+.sm-icon{ clear:both}
+.Reason5 h3{ margin-top:10px}
+.become-a-foxhopr h3{ margin-top:0px}
+.popup-border{ width:100%;}
+#testdiv{ width:100%}
+.padd_clear{ padding:0}
+.terms-img{ width: 25.5%;}
+.blank2{ height:269px !important}
+.bottom-img3{ width:50%!important}
+.bottom-img2{ width:25%!important}
+.bottom-img1{ width:25%!important}
+.bottom-img3 img {width: 80.5% !important;}
+.main-menu{ width:100%}
+ /******************* inner pages responsive start*************/
+ 
+ .inner_pages_heading{ margin-top:60px}
+ 
+  /******************* sign up .css start*************/
+  
+  .tab_border {left: 33%;  width: 34%;}
+  .select_group{ padding:0 25%}
+  .sign_up_divider {  border-left: 0; clear: both; padding:50px 0 0 0;}
+  
+  
+  .referral_details{ font-size:13px}
+  .kevin_martin{ font-size:35px;}
+  .tech_recu{ font-size:12px;}
+  .received_text{ font-size:13px;}
+  .advertisement img { width:100%}
+  .displaynone768{ display:none}
+  .text-center-twitter{ text-align:center}
+  .group_shuffling{ margin-top:0}
+  
+  .time_table .time_box {
+    margin-bottom: 15px;
+}
+.time_table{ padding:15px 0 0 0!important;}
+.end_time_btn{ float:left!important;}
+.end_time{ text-align:center; margin-left:8px; float:left}
+.start_marginTop{ margin-top:15px;}
+.graph_img{ margin-bottom:10px;}
+
+   .megamenu .navbar-nav > li > .dropdown-menu{   margin-top: -19px;}
+  }
+
+@media (max-width: 767px) {
+		.navbar-fixed-top{ padding:0}
+	navbar-shrink .logo{ padding:0;width:50%;}
+	.navbar-fixed-top.navbar-shrink .navbar-brand{ padding:0}
+.navbar-brand{ float:none; padding:0 }
+.navbar-brand img { width:50%;padding:10px 0 10px 10px}	
+header .intro-text .name{ font-size: 48px;line-height: 53.34px;}
+.video_div{ float:left; margin-top:30px}
+header .intro-text .skills{ font-size:34px !important;}
+.joinus{ margin-top:20px}
+header .container {padding-bottom: 10px;}
+#Meet-share-grow{ padding-top:30px; padding-bottom:30px}
+.become-a-foxhopr{ padding-top:20px; padding-bottom:20px}
+.foxhopr-bcome-member-div{ margin-top:30px}
+.learn_more{ margin:20px 0}
+.become-a-foxhopr h2{  font-size: 30px;}
+.become-a-foxhopr h3{ font-size:25px}
+.become-foxhopr-btn{ font-size:19px; padding: 15px 40px 18px;}
+.foxhopr_name{ font-size:17px;}
+.video_section_bottom{ padding-bottom:20px}
+.effect1{ height:227px;}
+.width-half{ width:100%}
+.effect3{height:453px}
+
+.padd-right0{ padding-right:15px}
+.images1{ width:330px !important}
+.clearboth{ clear:both; margin-top:30px}
+.width-25pr{ width:50%}
+.padd-left0{ padding-left:15px}
+.testimonial-right{  padding: 17.5px 0;}
+.testimonial-right h2{ font-size:22px}
+.Reason5{ padding-top:20px}
+.Reason5-decription p{ padding-bottom:30px}
+.subscribe_btn{ font-size: 18px; padding: 8.5px 14px;}
+.logo_bottom{ width:100%}
+#contact{ padding-top:20px; padding-bottom:20px}
+footer h3{ margin-bottom: 10px; margin-top: 20px;}
+.app-download{ width:60%}
+.social_icon{ float:left}
+.social_icon li{ padding-left:0}
+.btn-social{ margin-top:0}
+.padd_clear{ padding:0px 15px}
+.bg-anywhere{ padding:0px 15px}
+.close_btn_div { right: 0; top: -52px; width: 100%;}
+.learn_more_btn{ float:left; margin-top:10px; margin-left:15px}
+#closebtn{ float:left}
+.arrow-right{ display:none}
+.popup-border{ border:none}
+.become_member img{  display: block; margin-left: auto;margin-right: auto;}
+.navbar-fixed-top.navbar-shrink .navbar-brand .logo { width: 30%;}
+.navbar-brand img { padding: 10px 0 10px 10px;width: 28%;}
+.become-member-chart p br{ display:none}
+#Meet-share-grow p br{ display:none}
+
+.Reason5-decription p br{ display:none}
+.Reason5-decription p{ padding:0 80px 30px 80px !important}
+.app-download{ width:25%}
+.popup-border{ margin-left:5%}
+.made-for-u{ width:50%; float:left}
+.terms-img { width: 32%;}
+
+
+.blank2{ height:227px !important}
+.bottom-img3{ width:50%!important}
+.bottom-img2{ width:25%!important}
+.bottom-img1{ width:25%!important}
+.bottom-img3 img {width: 80.5% !important;}
+ /******************* inner pages responsive start*************/
+ 
+ .faq_section li{ width:100%}
+ .faq_head{ font-size:21px}
+ .forums_h{ font-size:23px;margin-bottom:-10px}
+ 
+
+ .contact_info{ text-align:center; padding-top:20px}
+ .support_div{ text-align:center}
+ .support_text{ text-align:center}
+ #inner_pages_top_gap p{ text-align:center}
+ .cont-icon{ text-align:center}
+ 
+ /******************* sign up*************/ 
+ .select_group { padding: 0 20%;}
+ .tab_border { left: 29%;  width: 42%;}
+  .clear_fix{ clear:both}
+  .time_table .time_box { margin-bottom:15px }
+  .time_table{ margin-bottom:15px; padding-bottom:15px !important; }
+  .border-top0{border: 4px solid #f2f2f2!important;}
+  .marign_bottom0{ margin-bottom:0 !important;}
+  
+  .search_table { padding: 3px 2px;}
+  .apply { margin-right: 9%;}
+  .archive{ margin-top:35px}
+  .megamenu .navbar-default{ margin-bottom:0}
+  
+  .megamenu .dropdown-menu { border: 2px solid #f2f2f2 !important;}
+  .write_comments{  margin-bottom: 15px;}
+  .group1{ font-size:30px}
+  .search_margin_responsiv{ margin-top:0 !important}
+  .seclect_bulk{ width:auto!important}
+  .inbox{ margin-top:50px}
+  .archivetop {  margin-top: 50px;}
+  .sent_message{margin-top: 50px;}
+  .advertisement img{ margin:auto}
+  .edit_profile_img{ display:inline-block}
+  .referral_profile_head{ margin-top:0px; margin-bottom:0px;}
+  .advertisement img{ width:auto}
+  .padd-left-nav0{ padding-left:15px !important;}
+  .end_time{ float:left; margin:10px 0; text-align:left; padding-left:0}
+  .end_time_btn{ float:left  !important; margin-left:17px;}
+  .left_video{ text-align:center}
+  .left_video_text{ font-size:12px;}
+  .left_video img{ width:auto}
+  .search-location_margin{ margin-top:10px !important}
+  .clfx-640{ clear:both}
+  .results_pages1{ margin-bottom:15px;}
+  .logged-in{ text-align:center}
+  .logged_lixia{ margin-top:-85px}
+    .logged_lixia img{  float:right}
+
+  .megamenu .navbar-default .navbar-nav > li > a{padding: 10px 15.5px;}
+  .megamenu .mega-dropdown-menu > li > ul > li > a{padding: 5px 20px;}
+  .logged_lixia {float: right;  width: auto;}
+   .logged_lixia img{ width:70%}
+ .megamenu .navbar-nav > li > .dropdown-menu{   margin-top: -2px;}
+ .msg_counter{ left:11%; right:auto}
+
+
+/*responsive tabel css */
+@media only screen and (max-width: 640px) {
+.data_table{ padding-top:15px; padding-bottom:15px;}
+    
+    /* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 2%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+	.text-center-twitter{ margin-top:40px;}
+	.media:first-child{ margin-top:10px;}
+	.search_newreferral_btn{ margin-top:15px;}
+}
+
+
+  /* End responsive tabel css */
+@media (max-width:480px) {
+	
+	.navbar-fixed-top{ padding:0}
+	navbar-shrink .logo{ padding:0;width:50%;}
+	.navbar-fixed-top.navbar-shrink .navbar-brand{ padding:0}
+.navbar-brand{ float:none; padding:0 }
+.navbar-brand img { width:50%;padding:10px 0 10px 10px}	
+header .intro-text .name{ font-size: 48px;line-height: 53.34px;}
+.video_div{ float:left; margin-top:30px}
+header .intro-text .skills{ font-size:34px !important;}
+.joinus{ margin-top:20px}
+header .container {padding-bottom: 10px;}
+#Meet-share-grow{ padding-top:30px; padding-bottom:30px}
+.become-a-foxhopr{ padding-top:20px; padding-bottom:20px}
+.foxhopr-bcome-member-div{ margin-top:30px}
+.learn_more{ margin:20px 0}
+.become-a-foxhopr h2{  font-size: 30px;}
+.become-a-foxhopr h3{ font-size:25px}
+.become-foxhopr-btn{ font-size:19px; padding: 15px 40px 18px;}
+.foxhopr_name{ font-size:17px;}
+.video_section_bottom{ padding-bottom:20px}
+.effect1{ height:124px;}
+.width-half{ width:100%}
+
+.padd-right0{ padding-right:15px}
+.images1{ width:330px !important}
+.clearboth{ clear:both; margin-top:30px}
+.width-25pr{ width:50%}
+.padd-left0{ padding-left:15px}
+.testimonial-right{  padding: 17.5px 0;}
+.testimonial-right h2{ font-size:22px}
+.Reason5{ padding-top:20px}
+.Reason5-decription p{ padding-bottom:30px}
+.subscribe_btn{ font-size: 18px; padding: 8.5px 14px;}
+.logo_bottom{ width:100%}
+#contact{ padding-top:20px; padding-bottom:20px}
+footer h3{ margin-bottom: 10px; margin-top: 20px;}
+.app-download{ width:60%}
+.social_icon{ float:left}
+.social_icon li{ padding-left:0}
+.btn-social{ margin-top:0}
+.padd_clear{ padding:0px 15px}
+.bg-anywhere{ padding:0px 15px}
+.close_btn_div { right: 0; top: -52px; width: 100%;}
+.learn_more_btn{ float:left; margin-top:10px; margin-left:15px}
+#closebtn{ float:left}
+.arrow-right{ display:none}
+.popup-border{ border:none}
+
+.navbar-fixed-top.navbar-shrink .navbar-brand .logo { transition: all 0.35s ease 0s; width: 44%;}
+
+.Reason5-decription p br{ display:none}
+.Reason5-decription p{ padding:0 37px 30px 37px !important; }
+
+.blank2{ height:167px !important}
+.width-half{ width:100%}
+.bottom-img3{ width:50%}
+.bottom-img2{ width:25%}
+.bottom-img1{ width:25%}
+
+
+.blank2{ height:168px !important}
+.bottom-img3{ width:50%!important;}
+.bottom-img2{ width:25%!important; height:135px}
+.bottom-img1{ width:25%!important;height:135px}
+.bottom-img3 img {width: 80.5% !important;}
+.bottom-img1 img{ width:100%}
+.pic h1{ font-size:10px !important; margin-top:0px}
+
+ /******************* inner pages responsive start*************/
+ .inner_pages_heading { margin-top: 80px;}
+ 
+ .tab_border { left:28%;  width: 44%;}
+ .group_select_text { font-size:14px}
+ .select_group{ padding: 0 10%;}
+ .about_fee li{ width:100%}
+ .payment_info_div a{ margin:0; }
+  .payment_info_div a img{ width:30% }
+  .clear_fix{ clear:both}
+  .monthly-fee{ font-size:13px;}
+  
+  .width_at_mob{ width:100%; margin-bottom:10px}
+  
+  .mega-dropdown-menu > li > ul > li {float: none; }
+  .group1{ font-size:23px}
+  .logged_lixia{ font-size:10px;}
+  .twitter_icon{ font-size:100px}
+  .login_head{ font-size:30px;}
+  .margin0_420{ margin-top:20px;}
+  .apply { margin-right: 25%;}
+  .apply_new{ margin-right:0!important;}
+  
+  .search-location_margin { margin-top: 15px !important;}
+  .media_fullwidth{ display:inline-block; text-align:center; width:100%; margin-bottom:20px;}
+  .rating-star{ margin-top:20px;}
+  .media_link{ padding-top:20px;}
+  
+  .edit_profile .contact_detial_text{ font-size:19px;}
+  .edit_profile h4{ font-size:32px;}
+  
+  
+  
+}
+@media (max-width: 360px){
+
+
+.blank2 {height: 109px !important;}
+	.arrow-right{ display:none}
+	.navbar-fixed-top{ padding:0}
+	navbar-shrink .logo{ padding:0;width:50%;}
+	.navbar-fixed-top.navbar-shrink .navbar-brand{ padding:0}
+.navbar-brand{ float:none; padding:0 }
+.navbar-brand img { width:50%;padding:10px 0 10px 10px}	
+header .intro-text .name{ font-size: 45px;line-height: 53.34px;}
+.video_div{ float:left; margin-top:30px}
+header .intro-text .skills{ font-size:31px !important;}
+.joinus{ margin-top:20px}
+header .container {padding-bottom: 10px;}
+#Meet-share-grow{ padding-top:30px; padding-bottom:30px}
+.become-a-foxhopr{ padding-top:20px; padding-bottom:20px}
+.foxhopr-bcome-member-div{ margin-top:30px}
+.learn_more{ margin:20px 0}
+.become-a-foxhopr h2{  font-size: 28px;}
+.become-a-foxhopr h3{ font-size:25px}
+.become-foxhopr-btn{ font-size:19px; padding: 15px 40px 18px;}
+.foxhopr_name{ font-size:17px;}
+.video_section_bottom{ padding-bottom:20px}
+.effect1{ height:124px;}
+.width-half{ width:100%}
+
+.padd-right0{ padding-right:15px}
+.images1{ width:330px !important}
+.clearboth{ clear:both; margin-top:30px}
+.width-25pr{ width:50%}
+.padd-left0{ padding-left:15px}
+.testimonial-right{  padding: 17.5px 0;}
+.testimonial-right h2{ font-size:22px}
+.Reason5{ padding-top:20px}
+.Reason5-decription p{ padding-bottom:30px}
+.subscribe_btn{ font-size: 18px; padding: 8px 14px;}
+.logo_bottom{ width:100%}
+#contact{ padding-top:20px; padding-bottom:20px}
+footer h3{ margin-bottom: 10px; margin-top: 20px;}
+.app-download{ width:60%}
+.social_icon{ float:left}
+.social_icon li{ padding-left:0}
+.btn-social{ margin-top:0}
+.padd_clear{ padding:0px 15px}
+.bg-anywhere{ padding:0px 15px}
+.close_btn_div { right: 0; top: -50px; width: 100%;}
+.learn_more_btn{ float:left; margin-top:10px; margin-left:15px}
+#closebtn{ float:left}
+.join_btn{ font-size:26px;}
+.become-member-chart p br{ display:none}
+#Meet-share-grow p br{ display:none}
+.become-a-foxhopr h3{ margin-top:1px}
+.made-for-u{ width:100%}
+
+.bottom-img2{ width:25%!important; height:99px}
+.bottom-img1{ width:25%!important;height:99px}
+.bottom-img1 img{ width:100%}
+
+ /******************* inner pages responsive start*************/
+ .inner_pages_heading { margin-top: 65px;}
+ 
+ .lixia_head{ font-size:27px}
+ .lixia_head span{ font-size:15px;}
+ .mypanel .panel-heading{ font-size:14px;}
+ .mypanel .panel_inbox{ padding-top:4px;}
+ .billing td{ font-size:14px}
+ 
+ 
+ 	 .group_select_text{ width:68%;font-size:11px;  }
+	 .sign_up_text{ width:54%; font-size:11px}
+	 .tab_border { left: 25%;  width:50%;}
+	 .select_group { padding: 0 4%;}
+	 .referrals_reviews_head{ font-size:13px}
+	 .star_color{ font-size:12px}
+	 .star_last_color1{ font-size:12px}
+	 .rating_23{ font-size:12px}
+	 
+} 
+
+@media (max-width: 320px){
+	.become-foxhopr-btn{font-size: 14px;}
+	.close_btn_div{ margin-top:-56px}
+	.effect3 { height:216px}
+	.demo-3 figure img{ width:100%}
+	.effect1 { height: 108px;}
+	.effect2{ width:100%}
+	
+
+
+	 /******************* inner pages responsive start*************/
+	 
+  .faq_head{ font-size:18px}
+  .forums_h{ font-size:19px; }
+   .inner_pages_heading { margin-top: 60px;}
+   
+   .search_table { padding: 0 1px;}
+   .search_table_bg{ padding:3px 4px 2px 4px }
+  
+   .bulk_btn{ font-size:13px; padding: 3px 5px;}
+   .seclect_value{ width:40px}
+   
+   .apply {margin-right: 4%; font-size:11px}
+     .logged_lixia{ font-size:9px;}
+	 .logged-in{ font-size:11px;}
+	 .logged-in span {font-size: 7px;}
+	 .group_select_text{ width:82%;font-size:11px;  }
+	 .sign_up_text{ width:60%; font-size:11px}
+	 .tab_border { left: 25%;  width:50%;}
+	 .select_group { padding: 0 4%;}
+	 .group-meeting-date .day_month{ width:80px}
+	}
+
+

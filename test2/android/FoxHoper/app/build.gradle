@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+/*Project ID: tonal-carving-103312 Project Number: 612691232632*/
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.app.foxhopr"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // buildConfigField "String", "SERVER_URL", '"http://someotherurl/"'
+        }
+        /* debug {
+            buildConfigField "String", "SERVER_URL", '"http://someurl/"'
+        }*/
+    }
+    repositories {
+        maven {
+            url "https://mint.splunk.com/gradle/"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/httpmime-4.2.5.jar')
+    compile files('libs/gcm.jar')
+    compile files('libs/retrofit-1.9.0.jar')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.splunk.mint:mint:4.4.0'
+
+}
+

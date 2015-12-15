@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/layout_app_back_header" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/webcastPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.youtube.player.YouTubePlayerView
+                    android:id="@+id/youtube_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/llReferralsTabs"
+            android:layout_width="@dimen/referrals_tabs_width"
+            android:layout_height="@dimen/referrals_tabs_height"
+            android:background="@drawable/bg_top_bar"
+            android:orientation="horizontal"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="@dimen/referrals_tabs_width"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/llContactsTab"
+                    android:layout_width="@dimen/referrals_contact_tabs_width"
+                    android:layout_height="@dimen/referrals_tabs_height"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textViewContactMessages"
+                        style="@style/ReferrelsTabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:text="@string/str_webcast_nowplaying"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#515052" />
+
+                <LinearLayout
+                    android:id="@+id/llPartnerTab"
+                    android:layout_width="@dimen/referrals_contact_tabs_width"
+                    android:layout_height="@dimen/referrals_tabs_height"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textViewPartner"
+                        style="@style/ReferrelsTabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:text="@string/str_webcast_upnext"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#515052" />
+
+                <LinearLayout
+                    android:id="@+id/llGoalTab"
+                    android:layout_width="@dimen/referrals_contact_tabs_width"
+                    android:layout_height="@dimen/referrals_tabs_height"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textViewGoal"
+                        style="@style/ReferrelsTabTextStyle"
+                        android:layout_width="wrap_content"
+                        android:text="@string/str_webcast_comment"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/flReferralsMid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/llReferralsTabs">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/referralsViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

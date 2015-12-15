@@ -1,0 +1,239 @@
+============================== Sprint 4 sql queries ============================
+
+================================ GAURAV 12 August ==============================
+--
+-- Table structure for table `webcast_comments`
+--
+
+CREATE TABLE IF NOT EXISTS `webcast_comments` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `webcast_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `comments` varchar(200) NOT NULL,
+  `is_checked` tinyint(1) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+
+/** 12 August, 2015 */
+ALTER TABLE `received_referrals` CHANGE `created` `created` DATETIME NOT NULL ;
+ALTER TABLE `received_referrals` CHANGE `modified` `modified` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+ALTER TABLE `send_referrals` CHANGE `created` `created` DATETIME NOT NULL ;
+ALTER TABLE `send_referrals` CHANGE `modified` `modified` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+
+
+ ============== Jitendra (FOX-554) =======================
+ ALTER TABLE `business_owners` ADD `job_title` VARCHAR( 255 ) NOT NULL AFTER `company` ;
+ 
+ ALTER TABLE `business_owners` ADD `address` VARCHAR( 255 ) NOT NULL AFTER `user_plan_id` ;
+ 
+ ALTER TABLE `business_owners` CHANGE `telephone` `office_phone` VARCHAR( 15 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+ 
+ ALTER TABLE `business_owners` ADD `website1` VARCHAR( 512 ) NOT NULL AFTER `website` ;
+ 
+ ALTER TABLE `business_owners` CHANGE `website` `website` VARCHAR( 510 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+CHANGE `blog` `twitter_profile_id` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+CHANGE `linkedin` `linkedin_profile_id` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+
+ALTER TABLE `business_owners` ADD `facebook_profile_id` VARCHAR( 255 ) NOT NULL AFTER `linkedin_profile_id` ;
+
+ALTER TABLE `business_owners` DROP `fax` ;
+
+ALTER TABLE `business_owners` ADD `aboutme` TEXT NULL DEFAULT NULL AFTER `business_description` ,
+ADD `services` INT NULL DEFAULT NULL AFTER `aboutme` ;
+
+ALTER TABLE `business_owners` CHANGE `services` `services` TEXT NULL DEFAULT NULL ;
+
+ALTER TABLE `business_owners` CHANGE `group_role` `group_role` ENUM( 'none', 'leader', 'co-leader', 'participant' ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'none' AFTER `group_id` ;
+
+ALTER TABLE `business_owners` CHANGE `is_leadership_interest` `is_leadership_interest` TINYINT( 1 ) NOT NULL DEFAULT '0' AFTER `notifications_enabled` ,
+CHANGE `is_newsletter_subscriber` `is_newsletter_subscriber` TINYINT( 1 ) NOT NULL DEFAULT '0' AFTER `profile_completion_status` ,
+CHANGE `timezone_id` `timezone_id` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `country_id` ,
+CHANGE `skype_id` `skype_id` VARCHAR( 50 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `website1` ;
+
+ALTER TABLE `business_owners` CHANGE `profile_completion_status` `profile_completion_status` VARCHAR( 50 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `is_leadership_interest` ,
+CHANGE `notifications_enabled` `notifications_enabled` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `is_leadership_interest` ;
+
+=========================================GAURAV 19 AUG ==============================================
+
+ALTER TABLE  `send_referrals` ADD  `group_id` INT UNSIGNED NOT NULL AFTER  `to_user_id` ;
+ALTER TABLE  `received_referrals` ADD  `group_id` INT UNSIGNED NOT NULL AFTER  `to_user_id` ;
+=========================================Priti 20 AUG ==============================================
+
+ALTER TABLE `contacts` CHANGE `website` `website` VARCHAR( 100 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ;
+ALTER TABLE `contacts` CHANGE `job_title` `website` VARCHAR( 35 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL ;
+
+=========================================Priti 28 AUG ==============================================
+ALTER TABLE `received_referrals` ADD `is_total_read` TINYINT( 1 ) NOT NULL DEFAULT '0' AFTER `is_read` ;
+ALTER TABLE `message_recipients` ADD `is_total_read` TINYINT( 1 ) NOT NULL DEFAULT '0' AFTER `is_read` ;
+=========================================GAURAV 1 SEPT =================================================
+
+ALTER TABLE  `business_owners` ADD  `is_unlocked` TINYINT( 1 ) NOT NULL DEFAULT  '0' AFTER  `group_role` ;
+=========================================Jitendra =================================================
+
+CREATE TABLE IF NOT EXISTS `live_feeds` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `to_user_id` int(11) unsigned NOT NULL,
+  `from_user_id` int(11) unsigned NOT NULL,
+  `feed_type` enum('event','message','newmember','referral','review') NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=30 ;
+
+================================================ROHAN =======================================================
+
+ALTER TABLE  `users` ADD  `twitter_connected` TINYINT( 1 ) NOT NULL AFTER  `device_id` ;
+ALTER TABLE  `users` ADD  `twitter_oauth_token` VARCHAR( 128 ) NOT NULL AFTER  `twitter_connected` ;
+ALTER TABLE  `users` ADD  `twitter_oauth_token_secret` VARCHAR( 128 ) NOT NULL AFTER  `twitter_oauth_token` ;
+
+CREATE TABLE IF NOT EXISTS `invite_partners` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `invitee_email` varchar(255) NOT NULL,
+  `status` enum('active','inactive','pending','') NOT NULL,
+  `referral_amount` decimal(10,0) NOT NULL,
+  `inviter_userid` int(11) NOT NULL,
+  `invitee_userid` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+
+ALTER TABLE  `users` CHANGE  `twitter_connected`  `twitter_connected` TINYINT( 1 ) NOT NULL DEFAULT  '0';
+
+ALTER TABLE  `invite_partners` ADD  `invite_hash` VARCHAR( 255 ) NOT NULL AFTER  `invitee_userid` ;
+
+============================================Gaurav 9 Sept==========================================================
+
+CREATE TABLE IF NOT EXISTS `reviews` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `referral_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `hash` varchar(255) NOT NULL,
+  `comments` varchar(350) NOT NULL,
+  `services` int(3) NOT NULL DEFAULT '0',
+  `knowledge` tinyint(1) NOT NULL DEFAULT '0',
+  `communication` tinyint(1) NOT NULL DEFAULT '0',
+  `created` datetime NOT NULL,
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+ALTER TABLE  `received_referrals` ADD  `rating_status` TINYINT( 1 ) NOT NULL DEFAULT  '0' AFTER  `referral_status` ;
+// Priti Kabra 9 Sep, 2015
+ALTER TABLE `reviews` CHANGE `services` `services` INT( 3 ) NOT NULL DEFAULT '0';
+ALTER TABLE `reviews` CHANGE `communication` `communication` INT( 3 ) NOT NULL DEFAULT '0';
+ALTER TABLE `reviews` CHANGE `knowledge` `knowledge` INT( 3 ) NOT NULL DEFAULT '0';
+
+//12 Sep, 2015
+ALTER TABLE `subscriptions` ADD `transaction_id` INT( 10 ) NOT NULL AFTER `is_active` ,
+ADD `next_subscription_date` DATETIME NOT NULL AFTER `transaction_id` ;
+ALTER TABLE `transactions` ADD `transaction_type` ENUM( 'transaction', 'subscription' ) NOT NULL DEFAULT 'transaction' AFTER `transaction_id` ;
+ALTER TABLE `subscriptions` DROP `transaction_id` ;
+ALTER TABLE `subscriptions` CHANGE `next_subscription_date` `next_subscription_date` DATE NOT NULL ;
+ALTER TABLE `users` ADD `deactivated_by_user` TINYINT( 1 ) NOT NULL DEFAULT '0' AFTER `twitter_oauth_token_secret` ;
+
+ALTER TABLE `users` ADD `reactivate` TINYINT( 1 ) NOT NULL DEFAULT '0' AFTER `deactivated_by_user` ;
+============================================Rohan 16 Sept==========================================================
+ALTER TABLE  `transactions` ADD  `group_type` ENUM(  'local',  'global',  '',  '' ) NOT NULL AFTER  `status` ;
+ALTER TABLE  `transactions` ADD  `purchase_date` DATETIME NOT NULL AFTER  `group_type` ;
+ALTER TABLE  `transactions` CHANGE  `group_type`  `group_type` VARCHAR( 32 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+
+//LiveFeed
+ALTER TABLE `live_feeds` ADD `group_id` INT( 11 ) NULL AFTER `from_user_id` ;
+ALTER TABLE  `invite_partners` ADD  `inviter_groupid` INT( 11 ) NOT NULL AFTER  `inviter_userid` ;
+ALTER TABLE  `contacts` ADD  `user_groupid` INT( 11 ) NOT NULL AFTER  `user_id` ;
+
+//25 Sep, 2015 By Priti Kabra
+ALTER TABLE `business_owners` ADD `is_kicked` TINYINT( 1 ) NOT NULL DEFAULT '0' AFTER `is_active` ;
+============================================Rohan 24 Sept==========================================================
+ALTER TABLE  `business_owners` ADD  `group_goals` INT NULL DEFAULT NULL AFTER  `is_active` ;
+ALTER TABLE  `business_owners` ADD  `group_member_goals` INT( 11 ) NULL AFTER  `group_goals` ;
+ALTER TABLE  `business_owners` ADD  `individual_goals` INT( 11 ) NULL AFTER  `group_member_goals` ;
+============================================Rohan 8th OCT==========================================================
+CREATE TABLE IF NOT EXISTS `credit_cards` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `credit_card_number` varchar(45) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+ALTER TABLE  `users` ADD  `fb_connected` INT UNSIGNED NOT NULL AFTER  `twitter_oauth_token_secret` ;
+ALTER TABLE  `users` ADD  `fb_access_token` VARCHAR( 255 ) NOT NULL AFTER  `fb_connected` ;
+
+ALTER TABLE  `users` ADD  `linkedin_connected` INT UNSIGNED NOT NULL AFTER  `fb_access_token` ;
+ALTER TABLE  `users` ADD  `linkedin_access_token` VARCHAR( 150 ) NOT NULL AFTER  `linkedin_connected` ;
+
+
+CREATE TABLE IF NOT EXISTS `referral_stats` (
+  `id` int(10) unsigned NOT NULL,
+  `sent_to` varchar(256) NOT NULL,
+  `sent_from_id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE  `referral_stats` ADD  `email_id` VARCHAR( 128 ) NOT NULL AFTER  `sent_from_id` ;
+ALTER TABLE `business_owners` ADD `group_update` DATE NOT NULL AFTER `is_kicked`;
+ALTER TABLE `business_owners` ADD `group_change` DATE NOT NULL AFTER `is_kicked`;
+
+/**********************Rohan Sprint 9***********************/
+
+CREATE TABLE IF NOT EXISTS `memberships` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `membership_type` varchar(64) NOT NULL,
+  `lower_limit` int(10) unsigned NOT NULL,
+  `upper_limit` int(10) unsigned NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+CREATE TABLE IF NOT EXISTS `suggestions` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `message` varchar(500) NOT NULL,
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+/**********************Priti Sprint 9***********************/
+ALTER TABLE `contacts` CHANGE `state_id` `state_id` INT(10) UNSIGNED NULL;
+ALTER TABLE `contacts` CHANGE `country_id` `country_id` CHAR(2) CHARACTER SET utf8 COLLATE utf8_general_ci NULL;
+ALTER TABLE `received_referrals` CHANGE `country_id` `country_id` CHAR(2) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL;
+ALTER TABLE `received_referrals` CHANGE `state_id` `state_id` INT(10) UNSIGNED NULL;
+ALTER TABLE `send_referrals` CHANGE `country_id` `country_id` CHAR(2) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL;
+ALTER TABLE `send_referrals` CHANGE `state_id` `state_id` INT(10) UNSIGNED NULL;
+
+ALTER TABLE `transactions` ADD `credit_card_number` VARCHAR(50) NOT NULL AFTER `status`;
+ALTER TABLE `subscriptions` ADD `transaction_id` INT(11) UNSIGNED NOT NULL AFTER `user_id`;
+
+ALTER TABLE  `contacts` ADD  `source` ENUM(  'webapp',  'gmail',  'csv') NOT NULL DEFAULT  'webapp' AFTER  `note` ;
+/**********************Priti Sprint 10***********************/
+ALTER TABLE `professions` ADD `category_id` INT(10) NOT NULL AFTER `id`;
+CREATE TABLE IF NOT EXISTS `profession_categories` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(35) NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+/**********************Priti Sprint 11***********************/
+
+ALTER TABLE `users` CHANGE `fb_connected` `fb_connected` TINYINT(1) UNSIGNED NOT NULL;
+ALTER TABLE `users` CHANGE `linkedin_connected` `linkedin_connected` TINYINT(1) UNSIGNED NOT NULL;
+ALTER TABLE `business_owners` CHANGE `notifications_enabled` `notifications_enabled` VARCHAR(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+/***********************Gaurav**********************/
+ALTER TABLE `available_slots` ADD `url_path` VARCHAR(100) NOT NULL AFTER `group_id`;
+ALTER TABLE `available_slots` ADD `is_active` TINYINT NOT NULL AFTER `date`;

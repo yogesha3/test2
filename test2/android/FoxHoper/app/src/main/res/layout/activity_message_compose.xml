@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CustomSpinner="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/send_referrals_margin_bottom"
+    android:layout_marginLeft="@dimen/create_referrals_margin_left"
+    android:layout_marginRight="@dimen/create_referrals_margin_right"
+    android:layout_marginTop="@dimen/send_referrals_margin_top"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.app.foxhopr.custom.view.BounceScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llSendReferralsNewContactNextStepOne"
+        android:layout_alignParentTop="true"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_send_referrals"
+            android:padding="10dp">
+
+            <com.app.foxhopr.custom.view.RegularTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/str_send_to_message"
+                android:paddingLeft="5dp"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:textColor="@color/black_white"
+                style="@style/LableReferrlTextStyle" />
+
+            <FrameLayout
+                android:id="@+id/flMessagerecipient"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/app_input_hight"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_select_team" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_dropdown"
+                    />
+
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:id="@+id/buttonSelectRecipient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_send_to_message"
+                    android:textColor="#C8C8C9"
+                    android:textSize="@dimen/input_send_text_size" />
+            </FrameLayout>
+
+
+            <com.app.foxhopr.custom.view.RegularTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/str_subject_message"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:textColor="@color/black_white"
+                style="@style/LableReferrlTextStyle" />
+
+            <EditText
+                android:id="@+id/editTextMessageSubject"
+                android:layout_width="fill_parent"
+                android:hint="@string/str_subject_message"
+                android:padding="5dp"
+                android:singleLine="false"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:layout_height="wrap_content"
+                style="@style/InputReferrlTextStyle" />
+
+            <com.app.foxhopr.custom.view.RegularTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/str_body_message"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:textColor="@color/black_white"
+                style="@style/LableReferrlTextStyle" />
+
+            <EditText
+                android:id="@+id/editTextMessageBody"
+                android:layout_width="fill_parent"
+                android:hint="@string/str_body_message"
+                android:padding="5dp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:layout_height="150dp"
+                style="@style/InputReferrlTextStyle" />
+
+            <com.app.foxhopr.custom.view.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_miximum_file_size"
+                android:textSize="12dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/bottom_tab_text_color_selected"
+                />
+            <com.app.foxhopr.custom.view.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_allowed_file_format"
+                android:textSize="12dp"
+                android:layout_gravity="left"
+                android:textColor="@color/bottom_tab_text_color_selected"
+                />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_select_team"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/llAttachmentList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_select_team"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAttachFile"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_select_team"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_upload_file"
+                    android:textSize="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="left"
+                    android:textColor="@color/black_white"
+                    />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_attachment"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right" />
+
+            </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSend"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_next"
+                android:gravity="center"
+
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:id="@+id/sendtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="@string/str_send"
+                    style="@style/NextTextStyle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.app.foxhopr.custom.view.BounceScrollView>
+
+
+</RelativeLayout>

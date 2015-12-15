@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/send_referrals_margin_top"
+    android:layout_marginBottom="@dimen/send_referrals_margin_bottom"
+    android:layout_marginLeft="@dimen/create_referrals_margin_left"
+    android:layout_marginRight="@dimen/create_referrals_margin_right"
+    android:background="@drawable/bg_send_referrals"
+    xmlns:CustomSpinner="http://schemas.android.com/apk/res-auto"
+    android:layout_height="fill_parent">
+        <com.app.foxhopr.custom.view.BounceScrollView
+            android:layout_width="fill_parent"
+            android:fillViewport="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/llSendReferralsNewContactNextStepOne"
+            android:fadingEdge="none"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+
+                android:padding="10dp"
+                android:layout_height="fill_parent">
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_first_name"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextFNameCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_first_name"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    android:enabled="false"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_last_name"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextLNameCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_last_name"
+                    android:enabled="false"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_company"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextCompanyNameCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_company"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_job_title"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextJobTitleCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_job_title"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_email_address"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextEmailCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_email_address"
+                    android:paddingLeft="5dp"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_website"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextWebsiteCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_website"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_address"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextAddressCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_address"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_country"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+
+                <FrameLayout
+                    android:id="@+id/flReferralsCountry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/app_input_hight"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_select_team" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/ic_dropdown"
+                        />
+
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:id="@+id/buttonNewContactSelectCountry"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="@string/str_select_country"
+                        android:textColor="#C8C8C9"
+                        android:textSize="@dimen/input_send_text_size" />
+                </FrameLayout>
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_state"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <FrameLayout
+                    android:id="@+id/flReferralsState"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/app_input_hight"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_select_team" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/ic_dropdown"
+                        />
+
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:id="@+id/buttonNewContactSelectState"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="@string/str_select_state"
+                        android:textColor="#C8C8C9"
+                        android:textSize="@dimen/input_send_text_size" />
+                </FrameLayout>
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_city"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextCityCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_city"
+                    android:paddingLeft="5dp"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_zip"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextZipCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_zip"
+                    android:paddingLeft="5dp"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_office_phone"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextOfficePhoneCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_office_phone"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_mobile"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <EditText
+                    android:id="@+id/editTextMobileCreateNewContact"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_mobile"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    style="@style/InputReferrlTextStyle" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_select_referral_status"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+                <FrameLayout
+                    android:id="@+id/flReferralsStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/app_input_hight"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_select_team" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/ic_dropdown"
+                        />
+
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:id="@+id/buttonreferralsStatus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="#C8C8C9"
+                        android:textSize="@dimen/input_send_text_size" />
+                </FrameLayout>
+
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_select_monetary_value"
+                    android:paddingLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_white"
+                    style="@style/LableReferrlTextStyle" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/llMonetoryValue"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:background="@drawable/bg_select_team"
+                android:orientation="horizontal" >
+
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black_white"
+                    />
+
+                <EditText
+                    android:id="@+id/editTextMonetaryValue"
+                    android:layout_width="fill_parent"
+                    android:hint="@string/str_select_monetary_value"
+                    android:paddingLeft="2dp"
+                    android:imeOptions="actionDone"
+                    android:layout_marginTop="0dp"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    style="@style/InputReferrlTextStyle" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.app.foxhopr.custom.view.BounceScrollView>
+
+        <LinearLayout
+            android:id="@+id/llSendReferralsNewContactNextStepOne"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_next"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <com.app.foxhopr.custom.view.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="@string/str_update"
+                style="@style/NextTextStyle"
+                />
+        </LinearLayout>
+</RelativeLayout>

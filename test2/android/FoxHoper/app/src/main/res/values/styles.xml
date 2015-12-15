@@ -1,0 +1,198 @@
+<resources>
+
+    <style name="myAppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/black</item>
+    </style>
+
+    <style name="ReferrelsTitleTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/refrrels_list_Large_text_color</item>
+        <item name="android:textSize">@dimen/referrals_tabs_title_textsize</item>
+
+    </style>
+
+    <style name="ReferrelsDetailsTitleTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/refrrels_list_Large_text_color</item>
+        <item name="android:textSize">@dimen/referrals_details_title_textsize</item>
+
+    </style>
+
+    <style name="ReferrelsSmallTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/refrrels_list_small_text_color</item>
+        <item name="android:textSize">@dimen/referrals_list_txt_textsize</item>
+    </style>
+
+    <style name="ReferrelsMediumTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/refrrels_list_small_text_color</item>
+        <item name="android:textSize">@dimen/referrals_details_medium_txt_textsize</item>
+    </style>
+
+    <style name="CommentDateStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/light_gray_color</item>
+        <item name="android:textSize">@dimen/comment_date</item>
+    </style>
+
+    <style name="ReferrelsTabTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">@dimen/referrals_tabs_text_size</item>
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_height">@dimen/referrals_tabs_text_height</item>
+    </style>
+    <style name="HeaderTitleTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:textSize">@dimen/login_alrady_account_txt_size</item>
+    </style>
+
+    <style name="HeaderTitleNotificationTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:textSize">@dimen/notification_text_size</item>
+    </style>
+    <style name="BottomTabTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textSize">@dimen/bottom_tab_textsize</item>
+    </style>
+
+    <style name="RemoveTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:textSize">@dimen/bottom_tab_textsize</item>
+    </style>
+    <style name="HeadingTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textSize">@dimen/login_alrady_account_txt_size</item>
+    </style>
+    <style name="SideMenuNameTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textSize">@dimen/side_menu_name_txt_size</item>
+    </style>
+    <style name="SideMenuMemberShipTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/app_header_background_color</item>
+        <item name="android:textSize">@dimen/side_menu_member_txt_size</item>
+    </style>
+    <style name="ProgressHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="foodRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_selector</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+    <style name="SideMenuITemTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/primaryColorDark</item>
+        <item name="android:textSize">@dimen/login_alrady_account_txt_size</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="NextTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:textSize">@dimen/next_button_textsize</item>
+    </style>
+
+    <style name="AllowAccessTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:textSize">@dimen/allow_button_textsize</item>
+    </style>
+
+    <style name="SendReferrlTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:textSize">@dimen/login_alrady_account_txt_size</item>
+    </style>
+
+
+    <style name="SelectTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:textSize">@dimen/send_referrals_txt_size</item>
+    </style>
+
+
+    <style name="SelectNewTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#A0A0A0</item>
+        <item name="android:textSize">@dimen/send_referrals_txt_size</item>
+    </style>
+
+    <style name="dropDownTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:textSize">@dimen/send_referrals_dropdown_textsize</item>
+    </style>
+    <style name="dropDownNewTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#A0A0A0</item>
+        <item name="android:textSize">@dimen/send_referrals_dropdown_textsize</item>
+        <item name="android:textColorHint">#A8A6A9</item>
+    </style>
+    <style name="InputReferrlTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#C8C8C9</item>
+        <item name="android:textColorHint">#C8C8C9</item>
+        <item name="android:textSize">@dimen/input_create_text_size</item>
+        <item name="android:layout_height">@dimen/app_input_hight</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@drawable/bg_select_team</item>
+    </style>
+
+    <style name="LableReferrlTextStyle" parent="@android:style/TextAppearance.Medium">
+
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">@dimen/input_send_text_size</item>
+    </style>
+
+    <style name="GoalTargetActualTextStyle" parent="@android:style/TextAppearance.Medium">
+
+        <item name="android:textColor">@color/black_white</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">@dimen/lable_target_actual_text_size</item>
+    </style>
+
+    <style name="style_registration_custom_spinner" parent="@style/InputReferrlTextStyle">
+        <item name="android:drawableRight">@drawable/ic_dropdown</item>
+    </style>
+    <style name="NoRecordTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textSize">@dimen/login_alrady_account_txt_size</item>
+    </style>
+
+    <style name="DetailReferrlCommentTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#C8C8C9</item>
+        <item name="android:textColorHint">#C8C8C9</item>
+        <item name="android:textSize">@dimen/input_create_text_size</item>
+        <item name="android:layout_height">@dimen/app_input_hight</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@drawable/bg_select_team</item>
+    </style>
+
+    <style name="received_referral_common_Textstyle" >
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+    <style name="inbox_message_common_Textstyle" >
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+            <style name="myAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="myAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

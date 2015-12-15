@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/llReferralsTabs"
+        android:layout_width="@dimen/referrals_tabs_width"
+        android:layout_height="@dimen/referrals_tabs_height"
+        android:background="@drawable/bg_top_bar"
+        android:orientation="horizontal"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="@dimen/referrals_tabs_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/llMessageInboxTab"
+                android:layout_width="@dimen/referrals_recived_tabs_width"
+                android:layout_height="@dimen/referrals_tabs_height"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewInboxMessages"
+                    style="@style/ReferrelsTabTextStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/str_inbox"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="18dp"
+                android:background="#515052" />
+
+            <LinearLayout
+                android:id="@+id/llMessageSendTab"
+                android:layout_width="@dimen/referrals_sent_tabs_width"
+                android:layout_height="@dimen/referrals_tabs_height"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewSendMessage"
+                    style="@style/ReferrelsTabTextStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/str_sent_message"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0.3dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="18dp"
+                android:background="#515052" />
+
+            <LinearLayout
+                android:id="@+id/llMessageInboxArchivedTab"
+                android:layout_width="@dimen/referrals_recived_archive_tabs_width"
+                android:layout_height="@dimen/referrals_tabs_height"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewInboxArchiveMessages"
+                    style="@style/ReferrelsTabTextStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/str_inbox_archive"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0.3dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="18dp"
+                android:background="#515052" />
+
+            <LinearLayout
+                android:id="@+id/llMessageSendArchivedTab"
+                android:layout_width="@dimen/referrals_sent_archive_tabs_width"
+                android:layout_height="@dimen/referrals_tabs_height"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewSendArchiveMessages"
+                    style="@style/ReferrelsTabTextStyle"
+                    android:layout_width="wrap_content"
+                    android:text="@string/str_sent_archive_message"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/flReferralsMid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/llReferralsTabs">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llReferralsBottomTabs">
+
+            <FrameLayout
+                android:id="@+id/referralsViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal">
+
+                <Button
+
+                    android:id="@+id/btnMessagesReadUnRead"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|center_horizontal"
+
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/icon_read"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/btnMessagesDelete"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/ic_deleteall"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/llReferralsBottomTabs"
+            layout="@layout/layout_bottom_tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true" />
+
+        <FrameLayout
+            android:id="@+id/messagesSearchViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginTop="80dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

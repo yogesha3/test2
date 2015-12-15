@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        >
+
+        <com.app.foxhopr.custom.view.RegularTextView
+            style="@style/LableReferrlTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/str_partner_name"
+            android:textColor="@color/black_white" />
+
+        <EditText
+            android:id="@+id/editTextPNameCreateNewContact"
+            style="@style/InputReferrlTextStyle"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/str_partner_name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black_white" />
+
+        <com.app.foxhopr.custom.view.RegularTextView
+            style="@style/LableReferrlTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingLeft="5dp"
+            android:text="@string/str_partner_email"
+            android:textColor="@color/black_white" />
+
+        <EditText
+            android:id="@+id/editTextPEmailCreateNewContact"
+            style="@style/InputReferrlTextStyle"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/str_partner_email"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingLeft="5dp" />
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/icon_separator"/>
+
+    </LinearLayout>
+
+    <!--<ImageView
+        android:id="@+id/imgAttchmentDelete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+
+        android:background="@drawable/ic_cross_delete" />-->
+    <ImageView
+        android:padding="3dp"
+        android:id="@+id/imgAttchmentDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_delete_invite"
+        android:textSize="25dp"/>
+
+</RelativeLayout>

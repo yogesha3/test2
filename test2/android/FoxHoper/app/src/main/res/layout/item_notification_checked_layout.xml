@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/list_back_color"
+        android:paddingRight="@dimen/list_item_padding"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/llReferralsRecivedCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.3"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/bg_checkbox"
+                android:id="@+id/checkBoxItemRecivedSelect" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/llReferralsRecivedCheck"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                style="@style/ReferrelsTitleTextStyle"
+                android:id="@+id/textViewNotificationTitle" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:id="@+id/llListReferralsStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:id="@+id/textViewtextViewNotificationDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textSize="@dimen/referrals_list_txt_textsize"
+                        android:singleLine="false"
+                        android:textColor="@color/gray_color"
+                         />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

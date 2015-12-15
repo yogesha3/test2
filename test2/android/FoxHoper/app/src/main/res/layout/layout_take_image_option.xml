@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/llLocal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_group"
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        <com.app.foxhopr.custom.view.RegularTextView
+            android:id="@+id/localText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/str_from_gallery"
+            style="@style/NextTextStyle"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llGlobal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_group"
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        <com.app.foxhopr.custom.view.RegularTextView
+            android:id="@+id/globalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/str_from_camera"
+            style="@style/NextTextStyle"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_next"
+        android:gravity="center"
+
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        <com.app.foxhopr.custom.view.RegularTextView
+            android:id="@+id/cancelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/str_cancel"
+            style="@style/NextTextStyle"
+            />
+    </LinearLayout>
+
+</LinearLayout>

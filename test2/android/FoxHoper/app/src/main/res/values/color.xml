@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="leftmenu_textcolor">#c5c4c4</color>
+    <color name="transperentcolor">#00000000</color>
+    <color name="black_color">#000000</color>
+    <color name="black_white">#FFFFFF</color>
+    <color name="fill_text_color">#77766A</color>
+    <color name="input_text_hint_color">#716f69</color>
+    
+    <color name="status_bar_color">#272426</color>
+    <color name="my_awesome_darker_red">#DD5924</color>
+    <color name="my_awesome_red">#DD5924</color>
+    <color name="blue_dark">#DD5924</color>
+    <color name="primaryColor">#2196F3</color>
+    <color name="primaryColorDark">#DD5924</color>
+
+    <color name="background_tab_pressed">#272426</color>
+
+    <!--App Header Color-->
+    <color name="app_header_background_color">#272426</color>
+    <color name="app_header_title_color">#ffffff</color>
+
+    <!--Login Screen-->
+    <color name="login_bg_color">#dddfdf</color>
+
+    <!--Referrals List itemColor-->
+    <color name="list_back_color">#F5F5F5</color>
+    <color name="refrrels_list_Large_text_color">#3A3637</color>
+    <color name="refrrels_list_small_text_color">#D45D32</color>
+    <color name="group_status_color">#DAD530</color>
+    <color name="group_status_global_color">#709CD2</color>
+    <color name="refrrels_search_list_small_text_color">#4F4C55</color>
+    <color name="done_bg_color">#88D45D32</color>
+
+    <!--Referrals List itemColor-->
+    <color name="bottom_tab_stip_color">#c8c8c8</color>
+    <color name="bottom_tab_text_color_selected">#e4562b</color>
+    <color name="bottom_tab_bg_color">#F5F5F5</color>
+
+    <color name="progress_bar_color">#454545</color>
+
+    <color name="input_background_color">#504D4E</color>
+    <color name="gray_color">#504D4E</color>
+    <color name="light_gray_color">#d2d3d3</color>
+    <color name="light_gray">#AAAAAA</color>
+    <color name="dark_red">#B02121</color>
+
+    <color name="color_facebook">#4B67A1</color>
+    <color name="color_linkedin">#007BB6</color>
+    <color name="color_twitter">#5DD7FC</color>
+    <color name="color_commentname">#F15A2B</color>
+    <color name="color_commenttext">#d3d3d3</color>
+</resources>

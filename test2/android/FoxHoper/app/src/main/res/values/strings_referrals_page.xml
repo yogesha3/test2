@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Referrals Screen  -->
+    <string name="str_recevied">Received</string>
+    <string name="str_sent">Sent</string>
+    <string name="str_archive">Archive</string>
+
+    <string name="str_send_archive">Sent Archive</string>
+    <string name="str_recevied_archive">Received Archive</string>
+
+    <!--Bottom Tabs-->
+    <string name="str_home">Home</string>
+    <string name="str_select">Select</string>
+    <string name="str_apply">Apply</string>
+    <string name="str_compose">Compose</string>
+    <string name="str_search">Search</string>
+
+    <string name="str_remove">Remove</string>
+    <string name="str_delete">Delete</string>
+
+
+    <!--Recived referrals-->
+    <string name="str_status">Status: </string>
+    <string name="str_value">Value: </string>
+    <string name="str_from">From</string>
+    <string name="str_to">To</string>
+</resources>

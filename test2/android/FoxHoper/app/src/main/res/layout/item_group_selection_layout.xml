@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/list_back_color"
+        android:paddingRight="@dimen/list_item_padding"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:weightSum="2">
+        <LinearLayout
+            android:id="@+id/llMessageAttachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+
+            android:layout_toRightOf="@+id/llReferralsRecivedCheck"
+            android:layout_weight="0.3"
+            >
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_calender1"
+                android:id="@+id/attachment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/llMessageAttachment"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:id="@+id/llListReferralsStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|bottom"
+                    android:layout_weight="1.1"
+                    android:orientation="horizontal"
+                    >
+
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ReferrelsTitleTextStyle"
+                        android:id="@+id/textViewDay"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/gray_color"
+                         />
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/textViewDayTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textSize="@dimen/group_selection_time_size"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/gray_color"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/gray_color"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:layout_height="fill_parent" />
+                <LinearLayout
+                    android:id="@+id/llListReferralsValues"
+                    android:layout_width="0dp"
+                    android:layout_weight=".9"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    >
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:id="@+id/textViewAccoutStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textSize="@dimen/comment_group_type_size"
+                        android:maxLines="1"
+                        android:gravity="center_horizontal"
+                        android:padding="2dp"
+                        android:text="GLOBAL"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="@dimen/details_margin_left"
+                        android:background="@drawable/guoup_status"
+                        android:textColor="@color/black_white"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/referrals_list_size"
+                        android:layout_height="@dimen/referrals_list_size"
+                        android:src="@drawable/icon_location_color"
+                        />
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:paddingLeft="2dp"
+                        style="@style/ReferrelsSmallTextStyle"
+                        android:id="@+id/textViewLocation" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".9"
+
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ReferrelsTitleTextStyle"
+                        android:singleLine="true"
+                        android:paddingLeft="2dp"
+                        android:id="@+id/textViewGroupName" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/llFirst"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    >
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/llSecond"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    >
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

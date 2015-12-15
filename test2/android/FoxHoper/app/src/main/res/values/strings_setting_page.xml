@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_change_password">Change Password</string>
+    <string name="str_notifications">Notifications</string>
+
+    <string name="str_current_password">Current Password</string>
+    <string name="str_new_password">New Password</string>
+    <string name="str_confirm_password">Confirm Password</string>
+    <string name="str_reset_password">RESET</string>
+    <string name="str_save_password">SAVE</string>
+    <string name="str_password_same">Current and New password cannot be same</string>
+    <string name="str_incorrect_password">Current password is incorrect</string>
+
+
+    <!--notificaitons-->
+    <string-array name="string_notification_title">
+        <item>Weekly summary</item>
+        <item>When you receive a referral</item>
+        <item>When a comment is made on a referral</item>
+        <item>When you receive a message</item>
+        <item>When a comment is made on a message</item>
+        <item>When you receive an event invitation</item>
+        <item>When a comment is made on a event</item>
+    </string-array>
+
+    <string-array name="string_notification_description">
+        <item>The weekly summary email</item>
+        <item>Notifies you that another user has sent you a referral and includes details</item>
+        <item>Notifies you that the other party has commented on a referral you sent or received</item>
+        <item>Notifies you that another user has sent you a message and includes details</item>
+        <item>Notifies you that the other party has commented on a message you sent or received</item>
+        <item>Notifies you that another user has sent you an event invitation and includes details</item>
+        <item>Notifies you that the other party has commented on a calendar event you sent or received</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_suggestions_title">SUGGESTIONS</string>
+    <string name="str_post_your_suggestion">Post your suggestions here...</string>
+</resources>

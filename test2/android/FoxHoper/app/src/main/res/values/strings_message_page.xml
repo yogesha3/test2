@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Message Screen  -->
+    <string name="str_inbox">INBOX</string>
+    <string name="str_sent_message">SENT</string>
+    <string name="str_inbox_archive">INBOX ARCHIVE</string>
+    <string name="str_sent_archive_message">SENT ARCHIVE</string>
+
+    <string name="str_send_to_message">Send To</string>
+    <string name="str_subject_message">Subject</string>
+    <string name="str_body_message">Message</string>
+    <string name="str_compose_message">COMPOSE MESSAGE</string>
+
+
+    <!--&lt;!&ndash;Bottom Tabs&ndash;&gt;
+    <string name="str_home">Home</string>
+    <string name="str_select">Select</string>
+    <string name="str_apply">Apply</string>
+    <string name="str_compose">Compose</string>
+    <string name="str_search">Search</string>
+
+    <string name="str_remove">Remove</string>
+
+
+    &lt;!&ndash;Recived referrals&ndash;&gt;
+    <string name="str_status">Status: </string>
+    <string name="str_value">Value: </string>
+    <string name="str_from">From</string>
+    <string name="str_to">To</string>-->
+</resources>

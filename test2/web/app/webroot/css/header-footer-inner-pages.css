@@ -1,0 +1,8 @@
+.navbar{ min-height:0px !important;}
+.logo{ width:197px !important}
+.navbar-brand{ padding-bottom:0; padding-top:0}
+.navbar-fixed-top.navbar-shrink { padding: 3px 0 2px; !important}
+.navbar .navbar-nav { margin-top: -5px;}
+.inner_pages_heading{ margin-top:70px}
+.footer_inner1{ background:#f2f2f2 !important; padding-top:30px;padding-bottom:30px; border-top:1px solid #ddd}
+.footer_inner2{ background:#f2f2f2 !important}

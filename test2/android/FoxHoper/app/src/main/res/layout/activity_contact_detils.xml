@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_app_back_header_with_edit" />
+
+    <include layout="@layout/item_row_header_referral_details" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:id="@+id/scrollViewTop"
+
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_email"
+                    android:id="@+id/imageView4" />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:autoLink="none"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:id="@+id/emailValue" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_website"
+                    />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:autoLink="none"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:singleLine="true"
+                    android:id="@+id/websiteValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_mobile"
+                    />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:id="@+id/mobileNoValue" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_telephone"
+                    />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:id="@+id/telephoneValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:paddingTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_location"
+                    />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:singleLine="false"
+                    android:id="@+id/locationValue" />
+            </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

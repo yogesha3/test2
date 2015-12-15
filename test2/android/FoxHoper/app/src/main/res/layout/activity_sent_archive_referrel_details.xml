@@ -1,0 +1,404 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_app_back_header_with_edit"
+    />
+
+    <include layout="@layout/item_row_header_referral_details"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:id="@+id/scrollViewTop"
+
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_email"
+                    android:id="@+id/imageView4" />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:autoLink="none"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:id="@+id/emailValue" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_website"
+                    />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:autoLink="none"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:singleLine="true"
+                    android:id="@+id/websiteValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_mobile"
+                    />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:id="@+id/mobileNoValue" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_telephone"
+                    />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:id="@+id/telephoneValue" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/received_referral_common_Textstyle"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:paddingTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_location"
+                    />
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:gravity="top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:singleLine="false"
+                    android:id="@+id/locationValue" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_separator"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/referrals_list_size"
+                        android:layout_height="@dimen/referrals_list_size"
+                        android:src="@drawable/icon_date"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:layout_marginLeft="@dimen/details_margin_left"
+                        android:textSize="@dimen/comment_date_time_text_size"
+                        android:paddingLeft="2dp"
+
+                        android:id="@+id/datevalue" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:layout_marginLeft="55dp"
+                android:orientation="horizontal"
+                >
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:text="@string/str_referral_status" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:id="@+id/textViewReferralsStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:maxLines="1"
+                    android:gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:background="@drawable/bg_next"
+                    android:textColor="@color/black_white"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                style="@style/received_referral_common_Textstyle"
+                android:layout_marginLeft="55dp"
+                android:orientation="horizontal"
+                >
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:text="@string/str_referral_value" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:id="@+id/textViewReferralsValues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/details_margin_left"
+                    android:textSize="@dimen/comment_date_time_text_size"
+                    android:maxLines="1"
+                    android:textColor="@color/gray_color"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llListReferralsStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
+                >
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textSize="@dimen/referrals_list_txt_textsize"
+                    android:textColor="@color/gray_color"
+                    android:text="@string/str_want_contact" />
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:id="@+id/textViewReferralWant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textSize="@dimen/referrals_list_txt_textsize"
+                    android:maxLines="1"
+                    android:textColor="@color/gray_color"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_separator"/>
+
+            <com.app.foxhopr.custom.view.BoldTextView
+                style="@style/received_referral_common_Textstyle"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="@dimen/referrals_details_list_txt_textsize"
+                android:maxLines="1"
+                android:textColor="@color/black_color"
+                android:text="@string/str_sender_message"
+                />
+
+            <com.app.foxhopr.custom.view.RegularTextView
+                style="@style/received_referral_common_Textstyle"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/textmessage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minLines="4"
+                android:textSize="@dimen/comment_date_time_text_size"
+                android:textColor="@color/light_gray_color"
+                />
+
+            <LinearLayout
+                android:id="@+id/llFileLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/received_referral_common_Textstyle"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="@dimen/referrals_list_size"
+                    android:layout_height="@dimen/referrals_list_size"
+                    android:src="@drawable/icon_comment"
+                    />
+                <com.app.foxhopr.custom.view.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/referrals_details_list_txt_textsize"
+                    android:text="@string/str_comment_message"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_separator"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:id="@+id/commentListView"
+                android:layout_gravity="center_horizontal"
+                android:divider="@color/bottom_tab_stip_color"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:background="@color/black_white"
+                android:padding="10dp"
+                android:stackFromBottom="true"
+                android:visibility="invisible"
+                />
+            <com.app.foxhopr.custom.view.RegularTextView
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/nocommentfound"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:minLines="2"
+                android:visibility="gone"
+                android:text="@string/not_comment"
+                android:textSize="@dimen/comment_date_time_text_size"
+                android:textColor="@color/light_gray_color"
+                />
+
+            <EditText
+                style="@style/received_referral_common_Textstyle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/editTextMessageComment"
+                android:layout_width="fill_parent"
+                android:maxLength="350"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:padding="5dp"
+                android:layout_height="120dp"
+                android:background="@drawable/bg_white_corner_gray_input"
+                android:layout_marginBottom="20dp"
+                 />
+
+            <LinearLayout
+                style="@style/received_referral_common_Textstyle"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/llPostComment"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bg_next"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:id="@+id/txtvNextReferrals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="@string/str_post_text"
+                    style="@style/NextTextStyle"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

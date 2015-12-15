@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_current_team">CURRENT TEAM</string>
+    <string name="str_previous_team">PREVIOUS TEAM</string>
+    <string name="str_goal">GOALS</string>
+    <string name="str_team_member">TEAM MEMBERS</string>
+    <string name="str_previous_team_member">PREVIOUS TEAM MEMBERS</string>
+    <string name="str_team_member_details">MEMBER DETAILS</string>
+    <string name="str_about_me">About Me</string>
+    <string name="str_company_description">Company Description</string>
+    <string name="str_service">Services</string>
+
+
+    <!--Goal text-->
+    <string name="str_update_group_goal">UPDATE GOALS</string>
+    <string name="str_set_group_goal">SET GOALS</string>
+    <string name="str_group_goal">Group Goals</string>
+    <string name="str_team_member_goal">Team Member Goals</string>
+    <string name="str_individual_goal">Individual Goals</string>
+    <string name="str_set_edit_key_update">update</string>
+    <string name="str_set_edit_key_set">set</string>
+
+    <string name="str_group_goal_text">Set referral sharing goals for 90 Days </string>
+    <string name="str_team_member_goal_text">Set referral sharing goals for each team member for 30 days</string>
+    <string name="str_individual_goal_text">Set your sharing referral target to individual team members for 30 days</string>
+    <string name="str_alert_morethan_five">Please enter no more than 5 characters</string>
+
+</resources>

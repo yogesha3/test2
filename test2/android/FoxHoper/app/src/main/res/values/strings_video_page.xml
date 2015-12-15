@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_training_video">Training Video</string>
+    <string name="str_webcast_video">Webcast</string>
+    <string name="str_webcast_nowplaying">Now Playing</string>
+    <string name="str_webcast_upnext">Up Next</string>
+    <string name="str_webcast_comment">Comments</string>
+    <string name="str_webcast_video_details">VIDEO DETAIL</string>
+    <string name="str_comment">COMMENTS</string>
+    <string name="str_thanks_message">Thanks for watching the training video.</string>
+</resources>

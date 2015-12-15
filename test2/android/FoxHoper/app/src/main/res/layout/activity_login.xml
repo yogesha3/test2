@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <com.app.foxhopr.custom.view.BounceScrollView
+        android:layout_width="fill_parent"
+        android:fillViewport="true"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/login_bg_color"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="@dimen/login_logo_width"
+                android:layout_height="@dimen/login_logo_height"
+                android:src="@drawable/login_logo" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_box_height"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_login_box"
+                android:paddingTop="@dimen/login_box_padding_top"
+                android:paddingLeft="@dimen/login_box_padding_left"
+                android:paddingRight="@dimen/login_box_padding_right"
+                android:paddingBottom="@dimen/login_box_padding_bottom"
+                android:layout_marginRight="@dimen/login_box_margin_right"
+                android:layout_marginLeft="@dimen/login_box_margin_left"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_login_heading"
+                        style="@style/HeadingTextStyle"
+                        />
+                    <com.app.foxhopr.custom.view.BoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_hoper"
+                        style="@style/HeadingTextStyle"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llLoginUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_box_hight_size"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_input"
+                    android:gravity="clip_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/login_box_inputmarginLeft"
+                    android:layout_marginRight="@dimen/login_box_inputmarginRight"
+                    android:paddingLeft="-3dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp" >
+
+                    <ImageView
+                        android:layout_width="@dimen/login_box_icon_width"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_login_user" />
+
+                    <EditText
+                        android:id="@+id/editTextLoginUserName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/str_email"
+                        android:paddingLeft="5dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@color/input_text_hint_color"
+                        android:textSize="@dimen/input_text_size" >
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llLoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_box_hight_size"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/bg_input"
+                    android:gravity="clip_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/login_box_inputmarginLeft"
+                    android:layout_marginRight="@dimen/login_box_inputmarginRight"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="-3dp"
+                    android:paddingTop="2dp" >
+
+
+                    <ImageView
+                        android:layout_width="@dimen/login_box_icon_width"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_login_password" />
+
+                    <EditText
+                        android:id="@+id/editTextLoginPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/str_password"
+                        android:paddingLeft="5dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/input_text_hint_color"
+                        android:textSize="@dimen/input_text_size" >
+                    </EditText>
+                </LinearLayout>
+                <com.app.foxhopr.custom.view.BoldTextView
+                    android:id="@+id/textViewLoginForgotPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="@dimen/login_forgot_password_txt_size"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/str_forgot_password_q_mark"
+                    android:textColor="@color/black_color"
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="@dimen/login_bottom_box_margin_right"
+                        android:background="@drawable/bg_login_bottom"
+                        android:orientation="vertical"
+                        >
+                    </FrameLayout>
+                    <com.app.foxhopr.custom.view.BoldButton
+                        android:id="@+id/buttonLoginSubmit"
+                        android:layout_width="160dp"
+                        android:layout_height="55dp"
+                        android:gravity="top|center_horizontal"
+                        android:paddingTop="10dp"
+                        android:textSize="@dimen/login_btn_text_size"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_login_btn"
+                        android:textColor="@color/black_white"
+                        android:text="@string/str_login" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.app.foxhopr.custom.view.BounceScrollView>
+
+
+
+</LinearLayout>

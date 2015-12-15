@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.foxhoper.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.app.foxhopr.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.app.foxhopr.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/application_name"
+        android:largeHeap="true"
+        android:theme="@style/myAppTheme" >
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.ForgotPasswordActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.MyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.DashboardActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SendReferralsSelectMembersActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SendReferralsSelectContactsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SendReferralsNewContactCreationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SendReferralsExistingContactCreationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SendReferralsNewContactCreationFinalStepActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SelectMembersActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.UpgradeMembershipActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name="com.app.foxhopr.services.NotificationService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name="com.app.foxhopr.services.CommentService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.app.foxhopr.ui.activities.NotificationListActivity"
+            android:label="@string/title_activity_notification_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.app.foxhopr" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.app.foxhopr.GCMIntentService" >
+        </service>
+
+        <activity
+            android:name="com.app.foxhopr.ui.activities.ReferrelDetailsActivity"
+            android:label="@string/title_activity_referrel_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SentReferrelDetailsActivity"
+            android:label="@string/title_activity_sent_referrel_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.ReceivedArchiveDetailsActivity"
+            android:label="@string/title_activity_receive_archive_referrel_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SentArchiveDetailsActivity"
+            android:label="@string/title_activity_sent_archive_referrel_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.messages.MessageComposeActivity"
+            android:label="@string/title_activity_message_compose"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.app.foxhopr.ui.activities.ReceivedRererralEditActivity"
+            android:label="@string/title_activity_received_rererral_edit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.messages.MessageInboxDetailsActivity"
+            android:label="@string/title_activity_message_inbox_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.contacts.ContactAddActivity"
+            android:label="@string/title_activity_contact_add"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.contacts.ContactEditActivity"
+            android:label="@string/title_activity_contact_edit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.contacts.ContactDetilsActivity"
+            android:label="@string/title_activity_contact_detils"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.team.TeamDetailsActivity"
+            android:label="@string/title_activity_team_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.activities.SelectContactListActivity"
+            android:label="@string/title_activity_select_contact"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.GroupSelection.GroupSelectionActivity"
+            android:label="@string/title_activity_group_selection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.GroupSelection.GroupSortActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.GroupSelection.SelectMeetingDayActivity"
+            android:label="@string/title_activity_meeting_selection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.GroupSelection.SelectMeetingTimeActivity"
+            android:label="@string/title_activity_meeting_selection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.Account.ProfileEditActivity"
+            android:label="@string/title_activity_profile_edit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.Account.PurchaseReceiptActivity"
+            android:label="@string/title_activity_purchase_receipt"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.Account.CreditCardActivity"
+            android:label="@string/title_activity_purchase_receipt"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+
+        <activity
+            android:name="com.app.foxhopr.ui.Account.SocialDetailsActivity"
+            android:label="@string/title_activity_SocialDetails"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            >
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="foxhoprapplication" android:host="twitter"  />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.Account.WebViewActivity"
+            android:label="@string/title_activity_SocialDetails"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name="com.app.foxhopr.ui.Video.WebCastPlayerActivity"
+            android:label="@string/title_activity_webcast_player"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:orientation="vertical" >
+
+<!--     android:background="@android:color/transparent" -->
+    <!-- style="?android:attr/spinnerDropDownItemStyle" -->
+    <!-- android:layout_height="?android:attr/listPreferredItemHeight" -->
+
+    <TextView
+        android:id="@+id/custom_picker_textview"
+        style="?android:attr/spinnerDropDownItemStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/custom_spinner_field_height"
+        android:singleLine="true"
+        android:drawablePadding="@dimen/registration_field_icon_padding"
+        android:paddingLeft="@dimen/registration_field_icon_padding"
+        android:paddingRight="@dimen/registration_field_icon_padding"
+        android:textColor="@color/black_color"
+        android:textSize="@dimen/spinner_text_size" />
+
+</LinearLayout>

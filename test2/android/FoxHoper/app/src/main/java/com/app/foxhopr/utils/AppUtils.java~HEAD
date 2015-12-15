@@ -1,0 +1,448 @@
+package com.app.foxhopr.utils;
+
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.app.ActivityManager;
+import android.content.ContentUris;
+import android.content.Context;
+import android.database.Cursor;
+import android.net.ConnectivityManager;
+import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
+import android.provider.DocumentsContract;
+import android.provider.MediaStore;
+import android.view.Window;
+import android.view.WindowManager;
+
+import com.app.foxhopr.SharedPrefrances.SharedPreference;
+import com.app.foxhopr.constants.ApplicationConstants;
+import com.foxhoper.app.R;
+
+import java.io.File;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
+
+
+public class AppUtils {
+
+	@SuppressLint("NewApi")
+	public static void changeStatusBarColor(Activity mCtx) {
+
+		Window window = mCtx.getWindow();
+		window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+		window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		if (Build.VERSION.SDK_INT >= 21) {
+			window.setStatusBarColor(mCtx.getResources().getColor(R.color.status_bar_color));
+		}
+	}
+
+
+	/**
+	 * Check whether is Internet Connection is available or not.
+	 * @param mCtx
+	 * @return
+	 */
+	public static boolean isOnline(Context mCtx) {
+		if (mCtx != null) {
+			ConnectivityManager conMgr = (ConnectivityManager) mCtx.getSystemService(Context.CONNECTIVITY_SERVICE);
+			// ARE WE CONNECTED TO THE NET
+			if (conMgr.getActiveNetworkInfo() != null && conMgr.getActiveNetworkInfo().isAvailable() && conMgr.getActiveNetworkInfo().isConnected()) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		return false;
+	}
+
+	public static String parseDateToddMMyyyy(String time) {
+		String inputPattern = "yyyy-MM-dd HH:mm:ss";
+		String outputPattern = "MMM dd, yyyy";
+		SimpleDateFormat inputFormat = new SimpleDateFormat(inputPattern);
+		SimpleDateFormat outputFormat = new SimpleDateFormat(outputPattern);
+
+		Date date = null;
+		String str = null;
+		try {
+			date = inputFormat.parse(time);
+			str = outputFormat.format(date);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return str;
+	}
+
+	public static String parseDateToddMMyyyyTime(String time) {
+		String inputPattern = "yyyy-MM-dd HH:mm:ss";
+		String outputPattern = "HH:mm a";
+		SimpleDateFormat inputFormat = new SimpleDateFormat(inputPattern);
+		SimpleDateFormat outputFormat = new SimpleDateFormat(outputPattern);
+
+		Date date = null;
+		String str = null;
+		try {
+			date = inputFormat.parse(time);
+			str = outputFormat.format(date);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return str;
+	}
+
+	public static String getDateString(String longValue){
+		Calendar cal = Calendar.getInstance();
+		long millisecond = Long.parseLong(longValue);
+		TimeZone tz = cal.getTimeZone();//get your local time zone.
+		SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy");
+		sdf.setTimeZone(tz);//set time zone.
+		String localTime = sdf.format(new Date(millisecond * 1000l));
+		Date date = new Date();
+		try {
+			date = sdf.parse(localTime);//get local date
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		//return date.toString();
+		return sdf.format(date);
+	}
+	/**
+	 * Get a file path from a Uri. This will get the the path for Storage Access Framework Documents, as well as the _data field for the MediaStore and other file-based ContentProviders.
+	 *
+	 * @param context
+	 * The context.
+	 * @param uri
+	 * The Uri to query.
+	 * @author paulburke
+	 */
+	@TargetApi(Build.VERSION_CODES.KITKAT)
+	@SuppressLint("NewApi")
+	public static String getPath(final Context context, final Uri uri) {
+
+		final boolean isKitKat = Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
+
+		// DocumentProvider
+		if (isKitKat && DocumentsContract.isDocumentUri(context, uri)) {
+			// ExternalStorageProvider
+			if (isExternalStorageDocument(uri)) {
+				final String docId = DocumentsContract.getDocumentId(uri);
+				final String[] split = docId.split(":");
+				final String type = split[0];
+
+				if ("primary".equalsIgnoreCase(type)) {
+					return Environment.getExternalStorageDirectory() + "/" + split[1];
+				}
+
+				// TODO handle non-primary volumes
+			}
+			// DownloadsProvider
+			else if (isDownloadsDocument(uri)) {
+
+				final String id = DocumentsContract.getDocumentId(uri);
+				final Uri contentUri = ContentUris.withAppendedId(Uri.parse("content://downloads/public_downloads"), Long.valueOf(id));
+
+				return getDataColumn(context, contentUri, null, null);
+			}
+			// MediaProvider
+			else if (isMediaDocument(uri)) {
+				final String docId = DocumentsContract.getDocumentId(uri);
+				final String[] split = docId.split(":");
+				final String type = split[0];
+
+				Uri contentUri = null;
+				if ("image".equals(type)) {
+					contentUri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+				} else if ("video".equals(type)) {
+					contentUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
+				} else if ("audio".equals(type)) {
+					contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+				}else  {
+					contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+				}
+
+				final String selection = "_id=?";
+				final String[] selectionArgs = new String[]{split[1]};
+
+				return getDataColumn(context, contentUri, selection, selectionArgs);
+			}
+		}
+		// MediaStore (and general)
+		else if ("content".equalsIgnoreCase(uri.getScheme())) {
+
+			// Return the remote address
+			if (isGooglePhotosUri(uri))
+				return uri.getLastPathSegment();
+
+			return getDataColumn(context, uri, null, null);
+		}
+		// File
+		else if ("file".equalsIgnoreCase(uri.getScheme())) {
+			return uri.getPath();
+		}
+
+		return null;
+	}
+	/**
+	 * Method for return file path of Gallery image
+	 *
+	 * @param context
+	 * @param uri
+	 * @return path of the selected image file from gallery
+	 */
+	@SuppressLint("NewApi")
+	public static String getPaths(final Context context, final Uri uri) {
+
+		// check here to KITKAT or new version
+		final boolean isKitKat = Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
+
+		// DocumentProvider
+		if (isKitKat && DocumentsContract.isDocumentUri(context, uri)) {
+
+			// ExternalStorageProvider
+			if (isExternalStorageDocument(uri)) {
+				final String docId = DocumentsContract.getDocumentId(uri);
+				final String[] split = docId.split(":");
+				final String type = split[0];
+
+				if ("primary".equalsIgnoreCase(type)) {
+					return Environment.getExternalStorageDirectory() + "/" + split[1];
+				}
+			}
+			// DownloadsProvider
+			else if (isDownloadsDocument(uri)) {
+
+				final String id = DocumentsContract.getDocumentId(uri);
+				final Uri contentUri = ContentUris.withAppendedId(Uri.parse("content://downloads/public_downloads"), Long.valueOf(id));
+
+				return getDataColumn(context, contentUri, null, null);
+			}
+
+		}
+		// MediaStore (and general)
+		else if ("content".equalsIgnoreCase(uri.getScheme())) {
+
+			// Return the remote address
+			if (isGooglePhotosUri(uri))
+				return uri.getLastPathSegment();
+
+			return getDataColumn(context, uri, null, null);
+		}
+		// File
+		else if ("file".equalsIgnoreCase(uri.getScheme())) {
+			return uri.getPath();
+		}
+
+		return null;
+	}
+	/**
+	 * Get the value of the data column for this Uri. This is useful for MediaStore Uris, and other file-based ContentProviders.
+	 *
+	 * @param context
+	 * The context.
+	 * @param uri
+	 * The Uri to query.
+	 * @param selection
+	 * (Optional) Filter used in the query.
+	 * @param selectionArgs
+	 * (Optional) Selection arguments used in the query.
+	 * @return The value of the _data column, which is typically a file path.
+	 */
+	public static String getDataColumn(Context context, Uri uri, String selection, String[] selectionArgs) {
+
+		Cursor cursor = null;
+		final String column = "_data";
+		final String[] projection = {column};
+
+		try {
+			cursor = context.getContentResolver().query(uri, projection, selection, selectionArgs, null);
+			if (cursor != null && cursor.moveToFirst()) {
+				final int index = cursor.getColumnIndexOrThrow(column);
+				return cursor.getString(index);
+			}
+		} finally {
+			if (cursor != null)
+				cursor.close();
+		}
+		return null;
+	}
+
+	/**
+	 * @param uri
+	 * The Uri to check.
+	 * @return Whether the Uri authority is ExternalStorageProvider.
+	 */
+	public static boolean isExternalStorageDocument(Uri uri) {
+		return "com.android.externalstorage.documents".equals(uri.getAuthority());
+	}
+
+	/**
+	 * @param uri
+	 * The Uri to check.
+	 * @return Whether the Uri authority is DownloadsProvider.
+	 */
+	public static boolean isDownloadsDocument(Uri uri) {
+		return "com.android.providers.downloads.documents".equals(uri.getAuthority());
+	}
+
+	/**
+	 * @param uri
+	 * The Uri to check.
+	 * @return Whether the Uri authority is MediaProvider.
+	 */
+	public static boolean isMediaDocument(Uri uri) {
+		return "com.android.providers.media.documents".equals(uri.getAuthority());
+	}
+
+	/**
+	 * @param uri
+	 * The Uri to check.
+	 * @return Whether the Uri authority is Google Photos.
+	 */
+	public static boolean isGooglePhotosUri(Uri uri) {
+		return "com.google.android.apps.photos.content".equals(uri.getAuthority());
+	}
+
+
+	public static String getFileNameFromUrl(String urlString) {
+
+
+		return urlString.substring(urlString.lastIndexOf('/') + 1).split("\\?")[0].split("#")[0];
+	}
+	public static String getFileExt(String fileName) {
+		return fileName.substring((fileName.lastIndexOf(".") + 1), fileName.length());
+	}
+
+	public static boolean checkFileExtension(String strExtension){
+		String[] extensionArr   = { "doc", "docx","xls", "xlsx", "pdf", "jpg", "jpeg", "png" };
+		return Arrays.asList(extensionArr).contains(strExtension);
+	}
+
+
+	public static float getFileSize(String filePath) throws Exception {
+		File file = new File(filePath);
+		long length = file.length();
+
+		float newlength = length / 1024f;
+
+		newlength = newlength / 1024;
+
+		/*if (newlength < 10)
+			return true;*/
+
+		return newlength;
+	}
+
+	/**
+	 * getting value of selected radio button
+	 * @return content description for radio
+	 */
+	public static String getRadioData(Activity mContext){
+		SharedPreference sharedPreference=new SharedPreference();
+
+		String mSortText="";
+			//if(null!=mSearchRadioButton && mSearchRadioButton.getCheckedRadioButtonId()!=-1) {
+				switch (sharedPreference.getSearchOrder(mContext)){
+
+					case  R.id.referrelAtoZ :
+						mSortText= mContext.getResources().getString(R.string.str_referrel_asc_value);
+						break;
+					case  R.id.referrelZtoA :
+						mSortText= mContext.getResources().getString(R.string.str_referrel_desc_value);
+						break;
+					case R.id.fromAtoZ:
+						mSortText= mContext.getResources().getString(R.string.str_from_asc_value);
+						break;
+					case R.id.fromZtoA:
+						mSortText=  mContext.getResources().getString(R.string.str_from_desc_value);
+						break;
+					case R.id.dateNewest:
+						mSortText=  mContext.getResources().getString(R.string.str_date_asc_value);
+						break;
+					case R.id.dateOldest:
+						mSortText= mContext.getResources().getString(R.string.str_date_desc_value);
+						break;
+					case R.id.statusAtoZ:
+						mSortText= mContext.getResources().getString(R.string.str_status_asc_value);
+						break;
+					case R.id.statusZtoA:
+						mSortText=mContext.getResources().getString(R.string.str_status_desc_value);
+						break;
+					case R.id.valueAtoZ:
+						mSortText= mContext.getResources().getString(R.string.str_value_asc_value);
+						break;
+					case R.id.valueZtoA:
+						mSortText= mContext.getResources().getString(R.string.str_value_desc_value);
+						break;
+				}
+			//}
+		return mSortText;
+	}
+
+	/**
+	 * getting value of selected radio button
+	 * @return content description for radio
+	 */
+	public static String getRadioDataASCOrDESC(Activity mContext){
+		SharedPreference sharedPreference=new SharedPreference();
+		String mSortText="";
+		switch (sharedPreference.getSearchOrder(mContext)){
+
+			case  R.id.referrelAtoZ :
+				mSortText= ApplicationConstants.ASC;
+				break;
+			case  R.id.referrelZtoA :
+				mSortText= ApplicationConstants.DESC;
+				break;
+			case R.id.fromAtoZ:
+				mSortText= ApplicationConstants.ASC;
+				break;
+			case R.id.fromZtoA:
+				mSortText= ApplicationConstants.DESC;
+				break;
+			case R.id.dateNewest:
+				mSortText= ApplicationConstants.DESC;
+				break;
+			case R.id.dateOldest:
+				mSortText= ApplicationConstants.ASC;
+				break;
+			case R.id.statusAtoZ:
+				mSortText= ApplicationConstants.ASC;
+				break;
+			case R.id.statusZtoA:
+				mSortText= ApplicationConstants.DESC;
+				break;
+			case R.id.valueAtoZ:
+				mSortText= ApplicationConstants.DESC;
+				break;
+			case R.id.valueZtoA:
+				mSortText= ApplicationConstants.ASC;
+				break;
+
+			default:
+				mSortText= ApplicationConstants.ASC;
+
+		}
+		return mSortText;
+	}
+
+	/*public static OkHttpClient getClient(){
+		final OkHttpClient okHttpClient = new OkHttpClient();
+		okHttpClient.setReadTimeout(60, TimeUnit.SECONDS);
+		okHttpClient.setConnectTimeout(60, TimeUnit.SECONDS);
+		return okHttpClient;
+	}*/
+	public static boolean isMyServiceRunning(Class<?> serviceClass,Context mContext) {
+		ActivityManager manager = (ActivityManager) mContext.getSystemService(Context.ACTIVITY_SERVICE);
+		for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+			if (serviceClass.getName().equals(service.service.getClassName())) {
+				return true;
+			}
+		}
+		return false;
+	}
+}

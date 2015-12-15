@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Referrals Screen  -->
+    <string name="str_send_referrals_to">Send Referral to:</string>
+    <string name="str_select_your_team">Select your team member(s)</string>
+    <string name="str_next">Next</string>
+    <string name="str_add_contact">Add Contact</string>
+    <string name="str_save">Save</string>
+    <string name="str_update">Update</string>
+    <string name="str_create">Create</string>
+
+    <!--Compose Referrals-->
+    <string name="str_select_a_contact">Select a Contact:</string>
+    <string name="str_choose_a_contact_from_list">Choose a contact from foxhopr contact list:</string>
+    <string name="str_select_an_existing_contact">Select an existing contact:</string>
+    <string name="str_or">OR</string>
+    <string name="str_create_a_new_contact">Create a New Contact</string>
+
+    <!--Create new contact-->
+    <string name="str_first_name">First Name</string>
+    <string name="str_last_name">Last Name</string>
+    <string name="str_company">Company</string>
+    <string name="str_job_title">Job Title</string>
+    <string name="str_email_address">Email Address</string>
+    <string name="str_website">Website</string>
+    <string name="str_website1">Website1</string>
+    <string name="str_website2">Website2</string>
+    <string name="str_address">Address</string>
+    <string name="str_country">Country</string>
+    <string name="str_select_country">Select Country</string>
+    <string name="str_select_month">Select Month</string>
+    <string name="str_state">State</string>
+    <string name="str_select_state">Select State</string>
+    <string name="str_select_year">Select Year</string>
+    <string name="str_select_referral_status">Referral Status</string>
+    <string name="str_select_monetary_value">Monetary Value</string>
+    <string name="str_city">City</string>
+    <string name="str_location">Location</string>
+    <string name="str_zip">ZIP Code</string>
+    <string name="str_office_phone">Office Phone</string>
+    <string name="str_mobile">Mobile</string>
+    <string name="str_twitter_id">Twitter Profile ID</string>
+    <string name="str_facebook_id">Facebook Profile ID</string>
+    <string name="str_linkedin_id">LinkedIn Profile ID</string>
+    <string name="str_skype_id">Skype ID</string>
+    <string name="str_message_from_sender">Message from Sender</string>
+    <string name="str_upload_file">Upload file</string>
+    <string name="str_miximum_file_size">Maximum file size allowed is 10 MB.</string>
+    <string name="str_allowed_file_format">Allowed file formats .pdf, .doc, .docx, .xls, .xlsx, .png, .jpg and .jpeg.</string>
+</resources>

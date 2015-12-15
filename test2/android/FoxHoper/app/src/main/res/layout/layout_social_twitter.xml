@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black_white"
+        android:paddingRight="@dimen/list_item_padding"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        >
+        <LinearLayout
+            android:id="@+id/llProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+
+            >
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/icon_twitter_big"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/llProfileImage"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            >
+            <com.app.foxhopr.custom.view.RegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black_color"
+                android:text="@string/str_social_twitter_header"
+                android:id="@+id/textViewItemRecivedName" />
+
+            <RelativeLayout
+                android:id="@+id/llComposeMemberList"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/referrals_tabs_height"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/llTwitterAllowAccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bg_twitter"
+                    android:layout_toLeftOf="@+id/llTwitterDetails"
+                    android:orientation="vertical" >
+                    <com.app.foxhopr.custom.view.RegularTextView
+
+                        android:id="@+id/textviewAllowTwitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_social_twitter_allow_access"
+                        style="@style/AllowAccessTextStyle"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:id="@+id/llTwitterDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical" >
+                   <ImageView
+
+                       android:layout_width="wrap_content"
+                       android:layout_height="60dp"
+                       android:src="@drawable/icon_social_media_setting"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:textColor="@color/gray_color"
+                android:text="@string/str_social_twitter_details"
+                 />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

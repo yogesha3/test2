@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_profile_account">Profile</string>
+    <string name="str_billing_account">Billing</string>
+    <string name="str_social_media">Social Media</string>
+    <string name="str_edit_profile">EDIT PROFILE</string>
+
+    <string name="str_from_gallery">Select Photo</string>
+    <string name="str_from_camera">Take Photo</string>
+    <!--<string name="str_team_member">TEAM MEMBERS</string>
+    <string name="str_previous_team_member">PREVIOUS TEAM MEMBERS</string>
+    <string name="str_team_member_details">MEMBER DETAILS</string>
+    <string name="str_about_me">ABOUT ME</string>
+    <string name="str_company_description">COMPANY DESCRIPTION</string>
+    <string name="str_service">SERVICES</string>-->
+
+    <!--Billing-->
+    <string name="str_billing_info_text">Plan can be changed once every 30 days</string>
+    <string name="str_billing_local_text">LOCAL</string>
+    <string name="str_billing_global_text">GLOBAL</string>
+    <string name="str_billing_cancel_text">Cancel</string>
+    <string name="str_billing_credit_card_text">Credit Card</string>
+    <string name="str_billing_receipts_text">Receipts</string>
+    <string name="str_billing_downgrade_text">Downgrade</string>
+    <string name="str_billing_upgrade_text">Upgrade</string>
+
+
+    <string name="str_alert_cancel_billing">Do you want to cancel the membership?</string>
+    <string name="str_message_cancel_billing">Your request have been registered with FoxHopr</string>
+
+    <string name="str_purchase_receipt_title">Purchase Receipts</string>
+    <string name="str_invoice_date">Invoice Date: </string>
+    <string name="str_purchase_date">Joined On: </string>
+    <string name="str_membership_plan">Membership Plan: </string>
+    <string name="str_invoice_text">invoice</string>
+
+    <!--credit card-->
+    <string name="str_associated_credit_card_text">The credit card ending with  %1$s is currently associated with your account</string>
+    <string name="str_update_credit_card_text">UPDATE CREDIT CARD INFORMATION</string>
+    <string name="str_credit_card_number_text">Card Number</string>
+    <string name="str_credit_card_cvc_text">CVC</string>
+    <string name="str_credit_card_expiration_month_text">Expiration Month</string>
+    <string name="str_credit_card_expiration_year_text">Expiration Year</string>
+    <string name="str_credit_card_appears_name_text">Name as it appears on card</string>
+    <string name="str_credit_card_title">CREDIT CARD DETAILS</string>
+    <string name="str_alert_credit_card_number">Please enter a valid credit card number.</string>
+    <string name="str_alert_credit_card_cvc">Please enter no more than 3 characters.</string>
+    <string name="wrng_str_credit_card_name">Name can have only alphabets, period, space and hyphen.</string>
+
+    <string-array name="string_month_list">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <!--Social Media-->
+    <string name="str_social_twitter_header">Authorize FoxHopr to tweet on your behalf</string>
+    <string name="str_social_twitter_details">FoxHopr does not store or have access to your Twitter login credentials at any time.</string>
+    <string name="str_social_twitter_allow_access">Allow Access</string>
+    <string name="str_social_twitter_revoke_access">Revoke Access</string>
+
+    <string name="str_social_facebook_header">Authorize FoxHopr to post on your behalf </string>
+    <string name="str_social_facebook_details">FoxHopr does not store or have access to your Facebook login credentials at any time.</string>
+    <string name="str_social_facebook_allow_access">Allow Access</string>
+    <string name="str_social_facebook_revoke_access">Revoke Access</string>
+
+    <string name="str_social_linkedin_header">Authorize FoxHopr to post on your behalf</string>
+    <string name="str_social_linkedin_details">FoxHopr does not store or have access to your LinkedIn login credentials at any time. </string>
+    <string name="str_social_linkedin_allow_access">Allow Access</string>
+    <string name="str_social_linkedin_revoke_access">Revoke Access</string>
+
+    <string name="str_social_twitter_referral">When you send a referral</string>
+    <string name="str_social_twitter_referral_details">Automatically tweets: "Just sent a referral to @username via @FoxHopr"</string>
+    <string name="str_social_twitter_message">When you send a message</string>
+    <string name="str_social_twitter_message_details">Automatically tweets: "Just sent a message to @username via @FoxHopr"</string>
+    <string name="str_social_twitter_invitation">When you send an event invitation</string>
+    <string name="str_social_twitter_invitation_details">Automatically tweets: "Just set up a calendar event with @username via @FoxHopr"</string>
+
+    <string name="str_social_facebook_referral">When you send a referral</string>
+    <string name="str_social_facebook_referral_details">Automatically posts: "Just sent a referral to username via FoxHopr"</string>
+    <string name="str_social_facebook_message">When you send a message</string>
+    <string name="str_social_facebook_message_details">Automatically posts: "Just sent a message to @username via @FoxHopr"</string>
+    <string name="str_social_facebook_invitation">When you send an event invitation</string>
+    <string name="str_social_facebook_invitation_details">Automatically posts: "Just set up a calendar event with @username via @FoxHopr"</string>
+
+    <string name="str_configure_post">CONFIGURE POSTS</string>
+
+    <!--notificaitons-->
+    <string-array name="string_configure_twitter_title">
+        <item>When you send a referral</item>
+        <item>When you send a message</item>
+        <item>When you send an event invitation</item>
+    </string-array>
+
+    <string-array name="string_configure_twitter_details">
+        <item>Automatically tweets: "Just sent a referral to @username via @FoxHopr"</item>
+        <item>Automatically tweets: "Just sent a message to @username via @FoxHopr"</item>
+        <item>Automatically tweets: "Just set up a calendar event with @username via @FoxHopr"</item>
+    </string-array>
+
+    <string-array name="string_configure_fb_linkedin_details">
+        <item>Automatically posts: "Just sent a referral to username via FoxHopr" </item>
+        <item>Automatically posts: "Just sent a message to username via FoxHopr"</item>
+        <item>Automatically posts: "Just set up a calendar event with username via FoxHopr"</item>
+    </string-array>
+
+    <string name="str_alert_twitter">Your Twitter account has been successfully linked</string>
+    <string name="str_alert_twitter_cancel">Connection to Twitter failed </string>
+    <string name="str_alert_twitter_already_linked">Your Twitter account has already been linked</string>
+    <string name="str_alert_facebook">Your Facebook account has been successfully linked</string>
+    <string name="str_alert_facebook_cancel">Connection to Facebook failed </string>
+    <string name="str_alert_facebook_already_linked">Your Facebook account has already been linked</string>
+    <string name="str_alert_linkedin">Your LinkedIn account has been successfully linked</string>
+    <string name="str_alert_linkedin_cancel">Connection to LinkedIn failed </string>
+    <string name="str_alert_linkedin_already_linked">Your LinkedIn account has already been linked</string>
+
+</resources>
+

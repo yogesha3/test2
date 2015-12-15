@@ -1,0 +1,72 @@
+.multiselect-container {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+.multiselect-container .input-group {
+    margin: 5px
+}
+.multiselect-container>li {
+    padding: 0
+}
+.multiselect-container>li>a.multiselect-all label {
+    font-weight: 700
+}
+.multiselect-container>li.multiselect-group label {
+    margin: 0;
+    padding: 3px 20px 3px 20px;
+    height: 100%;
+    font-weight: normal;
+}
+.multiselect-container>li.multiselect-group-clickable label {
+    cursor: pointer
+}
+.multiselect-container>li>a {
+    padding: 0
+}
+.multiselect-container>li>a>label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 3px 20px 3px 40px
+}
+.multiselect-container>li>a>label.radio,
+.multiselect-container>li>a>label.checkbox {
+    margin: 0
+}
+.multiselect-container>li>a>label>input[type=checkbox] {
+    margin-bottom: 5px
+}
+.btn-group>.btn-group:nth-child(2)>.multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+.form-inline .multiselect-container label.checkbox,
+.form-inline .multiselect-container label.radio {
+    padding: 3px 20px 3px 40px
+}
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox],
+.form-inline .multiselect-container li a label.radio input[type=radio] {
+    margin-left: -20px;
+    margin-right: 0
+}
+.multiselect-clear-filter{ background: #709cd2;padding: 5px 15px;}
+.multiselect-search{ height: 34px}
+.multiselect-container .input-group-addon{ padding: 6px 15px;}
+.multiselect-container li a:hover{ background: #f05a28; color: #fff}
+.multiselect-container li a:focus{ background: #f05a28; color: #fff}
+.multiselect-container  .multiselect { min-width: 160px}
+
+.multiselect-container .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{background: #709cd2;}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{background: #709cd2; }
+.multipleselect_btn{color:#2c3e50; padding: 2px 15px; background: #f2f2f2; border: 1px solid #999;  min-width: 245px; text-align: left;}
+.multipleselect_btn:hover{ background:#f2f2f2 !important; color:#2c3e50;}
+.multipleselect_btn2{color:#2c3e50; padding: 2px 15px; background: #fff; border: 1px solid #999; height:30px; min-width: 410px; text-align: left;}
+.multipleselect_btn2:hover{ background:#f2f2f2 !important; color:#2c3e50;}
+.sellect_arrow{ margin-top: 8px;color:#2c3e50;}
+
+.width_at_mob .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default{color:#2c3e50; background-color: #f2f2f2;}
+.multiselect-container input{ height: auto !important}
+

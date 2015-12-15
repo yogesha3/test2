@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_group_app_back_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.app.foxhopr.swipemenulist.SwipeMenuListView
+            android:id="@+id/listViewGroupSelection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bottom_tab_stip_color"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:layout_above="@+id/llReferralsBottomTabs"
+            />
+
+        <com.app.foxhopr.custom.view.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wrng_str_no_record"
+            android:id="@+id/norecordfound"
+            android:textSize="@dimen/common_radiobutton_text_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black_color"
+            android:visibility="gone"
+            />
+
+        <include
+            android:id="@+id/llReferralsBottomTabs"
+            layout="@layout/groupselection_layout_bottom_tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true" />
+        <FrameLayout
+            android:id="@+id/referralsSearchViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

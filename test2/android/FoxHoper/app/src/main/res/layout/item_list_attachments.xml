@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <com.app.foxhopr.custom.view.RegularTextView
+        android:id="@+id/textvFileNameList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/imgAttchmentDelete"
+        android:textColor="@color/black_white"
+        android:textSize="@dimen/attachment_list_text_size" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_centerVertical="true"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_cross_delete"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imgAttchmentDelete" />
+
+</RelativeLayout>

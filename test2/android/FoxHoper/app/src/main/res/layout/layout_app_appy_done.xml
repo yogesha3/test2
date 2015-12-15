@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingLeft="10dp"
+        android:background="@color/app_header_background_color"
+        android:paddingRight="10dp">
+
+        <com.app.foxhopr.custom.view.BoldTextView
+            android:id="@+id/textViewHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            style="@style/HeaderTitleTextStyle"
+            android:textAllCaps="true"
+            />
+
+        <!--<RelativeLayout
+            android:id="@+id/rlBack"
+            android:layout_width="@dimen/app_header_drawer_width"
+            android:layout_height="fill_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imgvDrawer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_back" />
+        </RelativeLayout>-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/str_apply"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/btnapplyHeader"
+            android:textSize="15dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/black_white"
+            android:background="@drawable/bg_next"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/str_cancel"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/btncancelHeader"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black_white"
+            android:background="@drawable/bg_cancel"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

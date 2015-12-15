@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black_white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        >
+        <LinearLayout
+            android:id="@+id/llReferralsRecivedCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.3"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:id="@+id/checkBoxItemRecivedSelect"
+                android:layout_width="@dimen/webcast_row_image_width"
+                android:layout_height="@dimen/webcast_row_image_height"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llVideoPlaying"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.3"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:id="@+id/imageviewplaying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_sound_waves"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/llReferralsRecivedCheck"
+            android:layout_toLeftOf="@+id/llVideoPlaying"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@style/ReferrelsTitleTextStyle"
+                android:text="Alex S"
+                android:id="@+id/textViewItemRecivedName" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/referrals_list_size"
+                        android:layout_height="@dimen/referrals_list_size"
+                        android:src="@drawable/ic_list_cal"
+                        />
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:paddingLeft="2dp"
+                        style="@style/ReferrelsSmallTextStyle"
+                        android:id="@+id/textViewItemSecivedName" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

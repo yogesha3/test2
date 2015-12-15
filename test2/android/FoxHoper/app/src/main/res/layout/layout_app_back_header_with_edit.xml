@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingLeft="10dp"
+        android:background="@color/app_header_background_color"
+        android:paddingRight="10dp">
+
+        <com.app.foxhopr.custom.view.BoldTextView
+            android:id="@+id/textViewHeaderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            style="@style/HeaderTitleTextStyle"
+            android:visibility="gone"
+            android:textAllCaps="true"
+            android:text="@string/str_welcome" />
+
+        <RelativeLayout
+            android:id="@+id/rlBack"
+            android:layout_width="@dimen/app_header_drawer_width"
+            android:layout_height="fill_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imgvDrawer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_back" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/editView"
+            android:background="@drawable/icon_edit"
+            android:layout_alignParentRight="true"
+
+           />
+
+    </RelativeLayout>
+
+</LinearLayout>

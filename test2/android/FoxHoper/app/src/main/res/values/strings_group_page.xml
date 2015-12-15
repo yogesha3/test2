@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_group_selection"> GROUP SELECTION </string>
+    <string name="str_group_upgrade_selection">UPGRADE YOUR GROUP</string>
+    <string name="str_group_downgrade_selection">DOWNGRADE YOUR GROUP</string>
+    <string name="str_by_meeting_day">By Meeting Days </string>
+    <string name="str_by_meeting_time">By Meeting Time </string>
+    <string name="str_most_member">Most Members</string>
+    <string name="str_newest">Newest</string>
+    <string name="str_sort_by">Sort By </string>
+    <string name="str_select_miles">Select Miles</string>
+    <string name="str_meeting_days">Meeting Day Selected</string>
+    <string name="str_meeting_times">Meeting Time Selected</string>
+    <string name="str_by_day">By Days </string>
+    <string name="str_by_time">By Time </string>
+
+    <string name="str_alert_thanks">Thanks for being the part of FoxHopr community</string>
+    <string name="str_alert_already_joined">You have already joined a group</string>
+    <string name="str_alert_group_has_updated">Your Group has beed updated successfully</string>
+    <string name="str_alert_already_downgraded">You have already downgraded your group</string>
+    <string name="str_alert_already_upgraded">You have already upgraded your group</string>
+    <string name="str_alert_group_no_longer_available">This group is no longer available. Please select another group</string>
+
+
+    <string-array name="string_miles">
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+    </string-array>
+
+    <string-array name="string_meeting_day">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="string_meeting_time">
+        <item>12:00 AM - 04:00 AM</item>
+        <item>04:00 AM - 08:00 AM</item>
+        <item>08:00 AM - 12:00 PM</item>
+        <item>12:00 PM - 04:00 PM</item>
+        <item>04:00 PM - 08:00 PM</item>
+        <item>08:00 PM - 12:00 AM</item>
+    </string-array>
+
+    <string-array name="string_meeting_time_exact">
+        <item>00:00 - 03:59</item>
+        <item>04:00 - 07:59</item>
+        <item>08:00 - 11:59</item>
+        <item>12:00 - 15:59</item>
+        <item>16:00 - 19:59</item>
+        <item>20:00 - 23:59</item>
+    </string-array>
+
+
+</resources>

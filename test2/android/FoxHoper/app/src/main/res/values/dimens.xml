@@ -1,0 +1,158 @@
+
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="left_menu_text_size">17dp</dimen>
+
+    <!-- App Header -->
+    <dimen name="app_header_hight">47dp</dimen>
+    <dimen name="app_header_content_hight">46dp</dimen>
+    <dimen name="app_header_drawer_width">60dp</dimen>
+
+    <!--Side pannel-->
+    <dimen name="side_menu_image_width">90dp</dimen>
+    <dimen name="side_menu_image_height">85dp</dimen>
+    <dimen name="side_menu_width">300dp</dimen>
+    <dimen name="side_menu_name_txt_size">18dp</dimen>
+    <dimen name="side_menu_member_txt_size">16dp</dimen>
+    <dimen name="rating_star_size">19dp</dimen>
+    <dimen name="side_menu_icon_size">30dp</dimen>
+    <dimen name="side_menu_arrow_width">10dp</dimen>
+    <dimen name="side_menu_arrow_height">18dp</dimen>
+
+    <!-- Login Screen -->
+    <dimen name="login_logo_width">280dp</dimen>
+    <dimen name="login_logo_height">100dp</dimen>
+    <dimen name="login_alrady_account_txt_size">18dp</dimen>
+    <dimen name="login_fillup_txt_size">15dp</dimen>
+    <dimen name="input_box_hight_size">42dp</dimen>
+    <dimen name="input_text_size">18dp</dimen>
+    <dimen name="login_forgot_password_txt_size">18dp</dimen>
+    <dimen name="login_btn_text_size">18dp</dimen>
+    <dimen name="login_bottom_box_margin_right">0dp</dimen>
+    <dimen name="login_box_height">345dp</dimen>
+    <dimen name="login_box_margin_left">0dp</dimen>
+    <dimen name="login_box_margin_right">5dp</dimen>
+    <dimen name="login_box_padding_left">17dp</dimen>
+    <dimen name="login_box_padding_right">8dp</dimen>
+    <dimen name="login_box_padding_bottom">15dp</dimen>
+    <dimen name="login_box_padding_top">10dp</dimen>
+
+    <dimen name="login_box_inputmarginLeft">10dp</dimen>
+    <dimen name="login_box_inputmarginRight">10dp</dimen>
+    <dimen name="login_box_icon_width">43dp</dimen>
+
+    <!--Forgot password-->
+    <dimen name="forgot_box_height">255dp</dimen>
+
+    <!--Referrals Tabs-->
+    <dimen name="referrals_tabs_width">630dp</dimen>
+    <dimen name="referrals_tabs_height">60dp</dimen>
+    <dimen name="referrals_tabs_text_height">46dp</dimen>
+    <dimen name="referrals_tabs_text_size">16dp</dimen>
+    <dimen name="referrals_tabs_title_textsize">18dp</dimen>
+    <dimen name="referrals_tabs_other_textsize">15dp</dimen>
+    <dimen name="referrals_list_txt_textsize">15dp</dimen>
+    <dimen name="group_selection_time_size">17dp</dimen>
+    <dimen name="referrals_list_size">16dp</dimen>
+    <dimen name="list_item_padding">10dp</dimen>
+
+    <dimen name="referrals_recived_tabs_width">140dip</dimen>
+    <dimen name="referrals_sent_tabs_width">140dip</dimen>
+    <dimen name="referrals_recived_archive_tabs_width">180dip</dimen>
+    <dimen name="referrals_sent_archive_tabs_width">160dip</dimen>
+
+    <!--contact-->
+    <dimen name="referrals_contact_tabs_width">140dip</dimen>
+    <dimen name="referrals_partner_width">140dip</dimen>
+    <dimen name="referrals_invite_partner_tabs_width">180dip</dimen>
+
+    <!--Team-->
+    <dimen name="referrals_current_team_tabs_width">180dip</dimen>
+    <dimen name="referrals_previus_team_tabs_width">180dip</dimen>
+    <dimen name="referrals_goal_tabs_width">140dip</dimen>
+
+    <!--Setting-->
+    <dimen name="referrals_change_password_tabs_width">220dip</dimen>
+
+    <!--Send referrals tabs-->
+    <dimen name="send_referrals_width">300dp</dimen>
+    <dimen name="send_referrals_textsize">16dp</dimen>
+    <dimen name="send_referrals_dropdown_textsize">15dp</dimen>
+    <dimen name="send_referrals_txt_size">17dp</dimen>
+    <dimen name="next_button_textsize">22sp</dimen>
+    <dimen name="allow_button_textsize">16sp</dimen>
+
+    <dimen name="send_referrals_padding_top">25dp</dimen>
+    <dimen name="send_referrals_padding_bottom">25dp</dimen>
+
+
+    <dimen name="send_referrals_margin_top">10dp</dimen>
+    <dimen name="send_referrals_margin_bottom">10dp</dimen>
+    <dimen name="send_referrals_margin_left">0dp</dimen>
+    <dimen name="send_referrals_margin_right">0dp</dimen>
+
+    <dimen name="create_referrals_margin_left">10dp</dimen>
+    <dimen name="create_referrals_margin_right">10dp</dimen>
+
+
+    <!--Bottom Tabs-->
+    <dimen name="bottom_tab_textsize">14dp</dimen>
+    <dimen name="app_bottom_tabs_icon_hight">35dp</dimen>
+    <dimen name="app_bottom_tabs_icon_width">35dp</dimen>
+
+    <!--Normal-->
+    <dimen name="app_input_hight">38dp</dimen>
+    <dimen name="custom_spinner_field_height">36dp</dimen>
+    <dimen name="registration_field_icon_padding">10dp</dimen>
+    <dimen name="spinner_text_size">16sp</dimen>
+    <dimen name="input_send_text_size">16dp</dimen>
+    <dimen name="lable_target_actual_text_size">16dp</dimen>
+    <dimen name="input_create_text_size">14dp</dimen>
+    <dimen name="list_text_size">16sp</dimen>
+    <dimen name="attachment_list_text_size">14sp</dimen>
+
+    <!--Common padding and margin size-->
+    <dimen name="common_margin_padding">10dp</dimen>
+    <dimen name="common_radiobutton_text_size">16sp</dimen>
+    <dimen name="common_radiobutton_padding_left_size">10dp</dimen>
+
+    <dimen name="dashboard_margin_right">40dp</dimen>
+
+    <!--DetailsTab-->
+    <dimen name="referrals_details_title_textsize">24sp</dimen>
+    <dimen name="referrals_details_medium_txt_textsize">16sp</dimen>
+
+
+    <!--Notification Text-->
+    <dimen name="notification_text_size">14dp</dimen>
+
+    <!--<Comment-->
+    <dimen name="comment_menu_image_width">30dp</dimen>
+    <dimen name="comment_menu_image_height">30dp</dimen>
+    <dimen name="comment_date_time_text_size">16sp</dimen>
+    <dimen name="comment_group_type_size">13sp</dimen>
+    <dimen name="comment_message_text_size">13sp</dimen>
+    <dimen name="comment_date">11sp</dimen>
+    <dimen name="referrals_details_list_txt_textsize">18dp</dimen>
+    <dimen name="details_margin_left">5dp</dimen>
+    <dimen name="details_sender_name_size">20sp</dimen>
+    <!--Invite Partner-->
+    <dimen name="invite_partner_edittext_height_width">80dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="group_user_height">26dp</dimen>
+    <dimen name="group_user_width">26dp</dimen>
+
+    <!--billing section-->
+    <dimen name="billing_group_text_size">55dp</dimen>
+    <dimen name="billing_amount_text_size">30dp</dimen>
+
+    <!--webcast-->
+    <dimen name="webcast_row_image_width">60dp</dimen>
+    <dimen name="webcast_row_image_height">60dp</dimen>
+
+
+</resources>

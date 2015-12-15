@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.app.foxhopr.swipemenulist.SwipeMenuListView
+        android:id="@+id/listViewTeam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/bottom_tab_stip_color"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        />
+
+    <com.app.foxhopr.custom.view.BoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wrng_str_no_record"
+        android:id="@+id/norecordfound"
+        android:textSize="@dimen/common_radiobutton_text_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black_color"
+        android:visibility="gone"
+        />
+</RelativeLayout>

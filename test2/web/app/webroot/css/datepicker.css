@@ -1,0 +1,47 @@
+.ui-datepicker-current{ 
+display:none !important;
+background: #fff none repeat scroll 0 0 !important;
+    border: 1px solid #f05a28 !important;
+    border-radius: 5px !important;
+    color: #f05a28 !important;
+    float: left !important;
+    font-family: "Graphik-Medium";
+    font-size: 12px !important;
+    line-height: 15px !important;
+     padding: 3px 30px 5px!important;
+    text-align: center !important;   opacity:1!important;
+}
+.ui-datepicker-current:hover{background: #f05a28 !important;
+    color: #fff !important;
+    text-decoration: none;}
+    
+    .ui-datepicker-close{ 
+
+background: #fff none repeat scroll 0 0 !important;
+    border: 1px solid #f05a28 !important;
+    border-radius: 5px !important;
+    color: #f05a28 !important;
+    float: rihgt !important;
+    font-family: "Graphik-Medium";
+    font-size: 12px !important;
+    line-height: 15px !important;
+     padding: 3px 30px 5px!important;
+    text-align: center !important;
+    font-weight:NORMAL !important;
+ 
+    
+}
+.ui-datepicker-close:hover{background: #f05a28 !important;
+    color: #fff !important;
+    text-decoration: none;}
+    .ui-datepicker .ui-datepicker-next-hover {
+    right: 2px !important;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+    top: 2px !important;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+    left: 2px !important;
+    top: 2px !important;
+}
+.rangePicker button.cancel {display: none !important;}

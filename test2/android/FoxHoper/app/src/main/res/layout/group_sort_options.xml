@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CustomSpinner="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/send_referrals_margin_bottom"
+    android:layout_marginLeft="@dimen/create_referrals_margin_left"
+    android:layout_marginRight="@dimen/create_referrals_margin_right"
+    android:layout_marginTop="@dimen/send_referrals_margin_top"
+    android:background="@drawable/bg_send_referrals"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.app.foxhopr.custom.view.BounceScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:fadingEdge="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/llComposeMemberList"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/referrals_tabs_height"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/llSelectSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bg_next"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:id="@+id/txtvSelectSearch"
+                        style="@style/NextTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_apply"
+                        android:textAllCaps="true"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCancelSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_cancel"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:id="@+id/txtvCnacelSearch"
+                        style="@style/NextTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_cancel"
+                        android:textAllCaps="true"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LLlocalGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.app.foxhopr.custom.view.RegularTextView
+                    style="@style/LableReferrlTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:text="@string/str_select_miles"
+                    android:textColor="@color/black_white" />
+
+                <FrameLayout
+                    android:id="@+id/flMiles"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/app_input_hight"
+                    android:layout_below="@+id/llComposeMemberList"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_select_team"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <com.app.foxhopr.custom.view.RegularTextView
+                        android:id="@+id/buttonMiles"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="@string/str_select_miles"
+                        android:textColor="#C8C8C9"
+                        android:textSize="@dimen/input_send_text_size" />
+                </FrameLayout>
+
+                <com.app.foxhopr.custom.view.RegularTextView
+                    style="@style/LableReferrlTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:text="@string/str_city"
+                    android:textColor="@color/black_white" />
+
+                <EditText
+                    android:id="@+id/editTextCityGroupSelection"
+                    style="@style/InputReferrlTextStyle"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_city"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:enabled="false"
+                    android:textColor="@color/black_white" />
+
+
+                <com.app.foxhopr.custom.view.RegularTextView
+                    style="@style/LableReferrlTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:text="@string/str_zip"
+                    android:textColor="@color/black_white" />
+
+                <EditText
+                    android:id="@+id/editTextZipGroupSelection"
+                    style="@style/InputReferrlTextStyle"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_zip"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/LLglobalGroup"
+                android:visibility="gone">
+                <com.app.foxhopr.custom.view.RegularTextView
+                    style="@style/LableReferrlTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:text="@string/str_location"
+                    android:textColor="@color/black_white" />
+
+                <EditText
+                    android:id="@+id/editTextLocation"
+                    style="@style/InputReferrlTextStyle"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/str_location"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black_white" />
+
+            </LinearLayout>
+
+            <com.app.foxhopr.custom.view.RegularTextView
+                style="@style/LableReferrlTextStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:paddingLeft="5dp"
+                android:text="@string/str_by_meeting_day"
+                android:textColor="@color/black_white" />
+
+            <FrameLayout
+                android:id="@+id/flMeetingDay"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/app_input_hight"
+                android:layout_below="@+id/llComposeMemberList"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_team"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_dropdown" />
+
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:id="@+id/buttonSelectMeetingDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_by_meeting_day"
+                    android:textColor="#C8C8C9"
+                    android:textSize="@dimen/input_send_text_size" />
+            </FrameLayout>
+
+            <com.app.foxhopr.custom.view.RegularTextView
+                style="@style/LableReferrlTextStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:paddingLeft="5dp"
+                android:text="@string/str_by_meeting_time"
+                android:textColor="@color/black_white" />
+
+            <FrameLayout
+                android:id="@+id/flMeetingTime"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/app_input_hight"
+                android:layout_below="@+id/llComposeMemberList"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_select_team"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_dropdown" />
+
+                <com.app.foxhopr.custom.view.RegularTextView
+                    android:id="@+id/buttonSelectMeetingTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_by_meeting_time"
+                    android:textColor="#C8C8C9"
+                    android:textSize="@dimen/input_send_text_size" />
+            </FrameLayout>
+
+            <com.app.foxhopr.custom.view.RegularTextView
+                style="@style/LableReferrlTextStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:paddingLeft="5dp"
+                android:text="@string/str_sort_by"
+                android:textColor="@color/black_white" />
+
+            <RadioGroup
+                android:id="@+id/radiogroupSort"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/radioMostMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/bg_checkbox"
+                    android:contentDescription="@string/str_total_value"
+                    android:paddingLeft="@dimen/common_radiobutton_padding_left_size"
+                    android:text="@string/str_most_member"
+                    android:textColor="@color/black_white"
+                    android:textSize="@dimen/common_radiobutton_text_size" />
+
+                <RadioButton
+                    android:id="@+id/radioNewest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/bg_checkbox"
+                    android:contentDescription="@string/str_date_desc_value"
+                    android:paddingLeft="@dimen/common_radiobutton_padding_left_size"
+                    android:text="@string/str_newest"
+                    android:textColor="@color/black_white"
+                    android:textSize="@dimen/common_radiobutton_text_size" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </com.app.foxhopr.custom.view.BounceScrollView>
+
+</RelativeLayout>

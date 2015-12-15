@@ -1,0 +1,8 @@
+# exclude files
+app/tmp/*
+app/Config/*
+vendors/*
+app/webroot/trainingvideo/*
+app/webroot/files/*
+app/webroot/img/uploads/*
+*~

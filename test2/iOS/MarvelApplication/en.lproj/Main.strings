@@ -1,0 +1,672 @@
+
+/* Class = "UITextField"; placeholder = "Send To"; ObjectID = "0Wh-gY-phQ"; */
+"0Wh-gY-phQ.placeholder" = "Send To";
+
+/* Class = "UILabel"; text = "ZIP Code"; ObjectID = "0dF-Z7-5bp"; */
+"0dF-Z7-5bp.text" = "ZIP Code";
+
+/* Class = "UILabel"; text = "COMPOSE MESSAGE"; ObjectID = "0dr-YA-93x"; */
+"0dr-YA-93x.text" = "COMPOSE MESSAGE";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "0rL-Ij-Dfu"; */
+"0rL-Ij-Dfu.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "GLOBAL"; ObjectID = "1a3-Cx-5S7"; */
+"1a3-Cx-5S7.text" = "GLOBAL";
+
+/* Class = "UITextField"; placeholder = "Address"; ObjectID = "1fk-IG-Rko"; */
+"1fk-IG-Rko.placeholder" = "Address";
+
+/* Class = "UILabel"; text = "MESSAGES"; ObjectID = "1y0-kJ-ZAZ"; */
+"1y0-kJ-ZAZ.text" = "MESSAGES";
+
+/* Class = "UIButton"; normalTitle = "SAVE"; ObjectID = "2lD-Ef-Ug5"; */
+"2lD-Ef-Ug5.normalTitle" = "SAVE";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2nf-d4-ME4"; */
+"2nf-d4-ME4.text" = "Label";
+
+/* Class = "UILabel"; text = "CHANGE PASSWORD"; ObjectID = "2te-nh-9HO"; */
+"2te-nh-9HO.text" = "CHANGE PASSWORD";
+
+/* Class = "UILabel"; text = "Chat with Member"; ObjectID = "3DQ-hA-mIq"; */
+"3DQ-hA-mIq.text" = "Chat with Member";
+
+/* Class = "UILabel"; text = "Website"; ObjectID = "3a8-kY-vDP"; */
+"3a8-kY-vDP.text" = "Website";
+
+/* Class = "UILabel"; text = "Office Phone"; ObjectID = "3aC-EP-ZLE"; */
+"3aC-EP-ZLE.text" = "Office Phone";
+
+/* Class = "UILabel"; text = "REFERRALS"; ObjectID = "3mn-Oa-Fd1"; */
+"3mn-Oa-Fd1.text" = "REFERRALS";
+
+/* Class = "UITextField"; placeholder = "Website"; ObjectID = "3yg-Ve-qLH"; */
+"3yg-Ve-qLH.placeholder" = "Website";
+
+/* Class = "UITextField"; placeholder = "Job Title"; ObjectID = "4d3-yd-38i"; */
+"4d3-yd-38i.placeholder" = "Job Title";
+
+/* Class = "UILabel"; text = "TEAM MEMBERS"; ObjectID = "4sX-NO-ul6"; */
+"4sX-NO-ul6.text" = "TEAM MEMBERS";
+
+/* Class = "UIButton"; normalTitle = "APPLY"; ObjectID = "5Lv-db-7Uk"; */
+"5Lv-db-7Uk.normalTitle" = "APPLY";
+
+/* Class = "UILabel"; text = "Message"; ObjectID = "5Vk-7s-rmr"; */
+"5Vk-7s-rmr.text" = "Message";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "5ca-R1-OlN"; */
+"5ca-R1-OlN.text" = "Country";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5hF-fW-gxG"; */
+"5hF-fW-gxG.text" = "Label";
+
+/* Class = "UILabel"; text = "Job Title"; ObjectID = "5ne-pp-aqu"; */
+"5ne-pp-aqu.text" = "Job Title";
+
+/* Class = "UILabel"; text = "Confirm Password"; ObjectID = "5tu-Nw-Sud"; */
+"5tu-Nw-Sud.text" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "Company"; ObjectID = "69V-zK-lSP"; */
+"69V-zK-lSP.placeholder" = "Company";
+
+/* Class = "UILabel"; text = "OR"; ObjectID = "6AQ-wY-vg0"; */
+"6AQ-wY-vg0.text" = "OR";
+
+/* Class = "UIButton"; normalTitle = "PREVIOUS TEAM"; ObjectID = "6CV-f5-YnY"; */
+"6CV-f5-YnY.normalTitle" = "PREVIOUS TEAM";
+
+/* Class = "UILabel"; text = "REFERRALS"; ObjectID = "6MJ-S4-M48"; */
+"6MJ-S4-M48.text" = "REFERRALS";
+
+/* Class = "UILabel"; text = "CONTACT DETAIL"; ObjectID = "6Xx-G4-fdU"; */
+"6Xx-G4-fdU.text" = "CONTACT DETAIL";
+
+/* Class = "UITextField"; placeholder = "Select Country"; ObjectID = "71j-SG-O1f"; */
+"71j-SG-O1f.placeholder" = "Select Country";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "7h6-rv-WLm"; */
+"7h6-rv-WLm.placeholder" = "City";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "8Yb-4i-box"; */
+"8Yb-4i-box.placeholder" = "Email Address";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "8fL-dQ-LSN"; */
+"8fL-dQ-LSN.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "Referral Status"; ObjectID = "8lx-jx-qYY"; */
+"8lx-jx-qYY.text" = "Referral Status";
+
+/* Class = "UIButton"; normalTitle = "POST"; ObjectID = "Ap6-WR-BHC"; */
+"Ap6-WR-BHC.normalTitle" = "POST";
+
+/* Class = "UILabel"; text = "Send Referral To:"; ObjectID = "Az7-Vv-XjL"; */
+"Az7-Vv-XjL.text" = "Send Referral To:";
+
+/* Class = "UITextField"; placeholder = "Select State"; ObjectID = "BDi-6e-yml"; */
+"BDi-6e-yml.placeholder" = "Select State";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "Bc9-sK-4M6"; */
+"Bc9-sK-4M6.placeholder" = "Last Name";
+
+/* Class = "UIButton"; normalTitle = "CHANGE PASSWORD"; ObjectID = "Bhu-L3-Ger"; */
+"Bhu-L3-Ger.normalTitle" = "CHANGE PASSWORD";
+
+/* Class = "UITextField"; placeholder = "ZIP Code"; ObjectID = "Bkg-pU-5cQ"; */
+"Bkg-pU-5cQ.placeholder" = "ZIP Code";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "CC4-zU-II0"; */
+"CC4-zU-II0.placeholder" = "First Name";
+
+/* Class = "UILabel"; text = "No attachments found."; ObjectID = "CfI-cn-m12"; */
+"CfI-cn-m12.text" = "No attachments found.";
+
+/* Class = "UIButton"; normalTitle = "NEXT"; ObjectID = "Cft-Zp-i9w"; */
+"Cft-Zp-i9w.normalTitle" = "NEXT";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "Cqv-Oc-Cuh"; */
+"Cqv-Oc-Cuh.text" = "City";
+
+/* Class = "UILabel"; text = "Mobile"; ObjectID = "DH4-TG-F3X"; */
+"DH4-TG-F3X.text" = "Mobile";
+
+/* Class = "UILabel"; text = "ZIP Code"; ObjectID = "Dg9-fs-JAW"; */
+"Dg9-fs-JAW.text" = "ZIP Code";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Dua-Vb-zOa"; */
+"Dua-Vb-zOa.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "CONTACTS"; ObjectID = "Dvk-rK-H03"; */
+"Dvk-rK-H03.text" = "CONTACTS";
+
+/* Class = "UIButton"; normalTitle = "INVITE PARTNERS"; ObjectID = "E00-oH-kPm"; */
+"E00-oH-kPm.normalTitle" = "INVITE PARTNERS";
+
+/* Class = "UILabel"; text = "By Meeting Day"; ObjectID = "EOs-vy-Xc2"; */
+"EOs-vy-Xc2.text" = "By Meeting Day";
+
+/* Class = "UILabel"; text = "Select your team member(s)"; ObjectID = "ESm-Kt-1pH"; */
+"ESm-Kt-1pH.text" = "Select your team member(s)";
+
+/* Class = "UIButton"; normalTitle = "RESET PASSWORD"; ObjectID = "Egk-py-Uio"; */
+"Egk-py-Uio.normalTitle" = "RESET PASSWORD";
+
+/* Class = "UILabel"; text = "ZIP Code"; ObjectID = "Ejz-7J-LQh"; */
+"Ejz-7J-LQh.text" = "ZIP Code";
+
+/* Class = "UIButton"; normalTitle = "Newest"; ObjectID = "ErE-Cd-HWs"; */
+"ErE-Cd-HWs.normalTitle" = "Newest";
+
+/* Class = "UILabel"; text = "By Meeting Time"; ObjectID = "F6h-Iw-4yn"; */
+"F6h-Iw-4yn.text" = "By Meeting Time";
+
+/* Class = "UITextField"; placeholder = "Subject"; ObjectID = "G0A-fR-JiR"; */
+"G0A-fR-JiR.placeholder" = "Subject";
+
+/* Class = "UITextView"; text = "You've been invited by john to be a part of FoxHopr network. Sign up today and get FoxHopping."; ObjectID = "GC4-jJ-ifZ"; */
+"GC4-jJ-ifZ.text" = "You've been invited by john to be a part of FoxHopr network. Sign up today and get FoxHopping.";
+
+/* Class = "UILabel"; text = "ADD A CONTACT"; ObjectID = "GOI-sx-suB"; */
+"GOI-sx-suB.text" = "ADD A CONTACT";
+
+/* Class = "UIButton"; normalTitle = "SEND"; ObjectID = "GP6-hh-P1N"; */
+"GP6-hh-P1N.normalTitle" = "SEND";
+
+/* Class = "UILabel"; text = "No record found"; ObjectID = "GdY-Bo-YxV"; */
+"GdY-Bo-YxV.text" = "No record found";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "HEh-21-sG7"; */
+"HEh-21-sG7.text" = "Address";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "Hf4-yW-3Qx"; */
+"Hf4-yW-3Qx.placeholder" = "Last Name";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "IOO-N5-wcw"; */
+"IOO-N5-wcw.placeholder" = "First Name";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "IQr-Ae-Ff4"; */
+"IQr-Ae-Ff4.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "IvV-ym-Fmq"; */
+"IvV-ym-Fmq.placeholder" = "Email Address";
+
+/* Class = "UILabel"; text = "Next Shuffle - 26 Jun 2015"; ObjectID = "J3e-9N-e1H"; */
+"J3e-9N-e1H.text" = "Next Shuffle - 26 Jun 2015";
+
+/* Class = "UILabel"; text = "Select Miles"; ObjectID = "J3s-b3-i4p"; */
+"J3s-b3-i4p.text" = "Select Miles";
+
+/* Class = "UIButton"; normalTitle = "SEND INVITATIONS"; ObjectID = "JuK-9c-Hhr"; */
+"JuK-9c-Hhr.normalTitle" = "SEND INVITATIONS";
+
+/* Class = "UIButton"; normalTitle = "NEXT"; ObjectID = "K2K-Gn-dv6"; */
+"K2K-Gn-dv6.normalTitle" = "NEXT";
+
+/* Class = "UITextField"; placeholder = "ZIP Code"; ObjectID = "KYN-AO-cQX"; */
+"KYN-AO-cQX.placeholder" = "ZIP Code";
+
+/* Class = "UILabel"; text = "Website"; ObjectID = "L7B-XL-D5K"; */
+"L7B-XL-D5K.text" = "Website";
+
+/* Class = "UILabel"; text = "deepak kumar"; ObjectID = "LWo-mo-q1j"; */
+"LWo-mo-q1j.text" = "deepak kumar";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "Mod-pu-jeq"; */
+"Mod-pu-jeq.placeholder" = "Confirm Password";
+
+/* Class = "UILabel"; text = "NOTIFICATIONS"; ObjectID = "MvN-bp-Jmz"; */
+"MvN-bp-Jmz.text" = "NOTIFICATIONS";
+
+/* Class = "UILabel"; text = "Maximum file size allowed 10 MB."; ObjectID = "O5I-6a-tvS"; */
+"O5I-6a-tvS.text" = "Maximum file size allowed 10 MB.";
+
+/* Class = "UIButton"; normalTitle = "Newest"; ObjectID = "OAA-Dq-QPy"; */
+"OAA-Dq-QPy.normalTitle" = "Newest";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "OEb-HI-wPs"; */
+"OEb-HI-wPs.text" = "Location";
+
+/* Class = "UILabel"; text = "Maximum file size allowed 10 MB."; ObjectID = "OFm-pa-Rod"; */
+"OFm-pa-Rod.text" = "Maximum file size allowed 10 MB.";
+
+/* Class = "UIButton"; normalTitle = "INBOX"; ObjectID = "OKp-qB-PUy"; */
+"OKp-qB-PUy.normalTitle" = "INBOX";
+
+/* Class = "UILabel"; text = "Company"; ObjectID = "Ocy-pZ-Hzk"; */
+"Ocy-pZ-Hzk.text" = "Company";
+
+/* Class = "UILabel"; text = "Company"; ObjectID = "Oeb-fC-03n"; */
+"Oeb-fC-03n.text" = "Company";
+
+/* Class = "UITextField"; placeholder = "Address"; ObjectID = "OwM-Ox-cfq"; */
+"OwM-Ox-cfq.placeholder" = "Address";
+
+/* Class = "UILabel"; text = "Choose a contact from your foxhopr contact list"; ObjectID = "P1l-ay-5Nz"; */
+"P1l-ay-5Nz.text" = "Choose a contact from your foxhopr contact list";
+
+/* Class = "UILabel"; text = "DOCUMENT"; ObjectID = "P2c-sT-Z7E"; */
+"P2c-sT-Z7E.text" = "DOCUMENT";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "P4F-8W-6FC"; */
+"P4F-8W-6FC.text" = "Address";
+
+/* Class = "UIButton"; normalTitle = "Most Members"; ObjectID = "PQq-J4-4eH"; */
+"PQq-J4-4eH.normalTitle" = "Most Members";
+
+/* Class = "UITextField"; placeholder = "Select Miles"; ObjectID = "PVH-fU-nTe"; */
+"PVH-fU-nTe.placeholder" = "Select Miles";
+
+/* Class = "UILabel"; text = "First Name"; ObjectID = "Pkv-oW-s5b"; */
+"Pkv-oW-s5b.text" = "First Name";
+
+/* Class = "UITextField"; placeholder = "Mobile"; ObjectID = "PmJ-kA-QEF"; */
+"PmJ-kA-QEF.placeholder" = "Mobile";
+
+/* Class = "UILabel"; text = "Monetary Value:"; ObjectID = "QYW-hT-nWC"; */
+"QYW-hT-nWC.text" = "Monetary Value:";
+
+/* Class = "UILabel"; text = "Mobile"; ObjectID = "Qba-71-eIh"; */
+"Qba-71-eIh.text" = "Mobile";
+
+/* Class = "UITextField"; placeholder = "Select Country"; ObjectID = "QiC-Xn-r6V"; */
+"QiC-Xn-r6V.placeholder" = "Select Country";
+
+/* Class = "UIButton"; normalTitle = "NOTIFICATION"; ObjectID = "QvQ-4L-0De"; */
+"QvQ-4L-0De.normalTitle" = "NOTIFICATION";
+
+/* Class = "UILabel"; text = "GROUP SELECTION"; ObjectID = "RLL-l0-x21"; */
+"RLL-l0-x21.text" = "GROUP SELECTION";
+
+/* Class = "UILabel"; text = "Job Title"; ObjectID = "RSH-Fl-eXO"; */
+"RSH-Fl-eXO.text" = "Job Title";
+
+/* Class = "UIButton"; normalTitle = "SEND INVITATIONS"; ObjectID = "ReZ-Ka-XVE"; */
+"ReZ-Ka-XVE.normalTitle" = "SEND INVITATIONS";
+
+/* Class = "UILabel"; text = "Last Name"; ObjectID = "Ri9-7H-KMv"; */
+"Ri9-7H-KMv.text" = "Last Name";
+
+/* Class = "UILabel"; text = "REFERRALS"; ObjectID = "SEI-O6-Ijf"; */
+"SEI-O6-Ijf.text" = "REFERRALS";
+
+/* Class = "UITextField"; placeholder = "Select your team members"; ObjectID = "SUZ-Vw-4Id"; */
+"SUZ-Vw-4Id.placeholder" = "Select your team members";
+
+/* Class = "UITextField"; placeholder = "Office Phone"; ObjectID = "SgB-Ej-P7r"; */
+"SgB-Ej-P7r.placeholder" = "Office Phone";
+
+/* Class = "UITextField"; placeholder = "ZIP Code"; ObjectID = "T8u-zo-rpU"; */
+"T8u-zo-rpU.placeholder" = "ZIP Code";
+
+/* Class = "UILabel"; text = "No record found"; ObjectID = "TAl-Da-fx2"; */
+"TAl-Da-fx2.text" = "No record found";
+
+/* Class = "UIButton"; normalTitle = "UPDATE"; ObjectID = "Ti5-7B-LwV"; */
+"Ti5-7B-LwV.normalTitle" = "UPDATE";
+
+/* Class = "UIButton"; normalTitle = "SENT"; ObjectID = "ToG-IK-yvP"; */
+"ToG-IK-yvP.normalTitle" = "SENT";
+
+/* Class = "UITextField"; placeholder = "By Meeting Day"; ObjectID = "Tv6-sZ-IvY"; */
+"Tv6-sZ-IvY.placeholder" = "By Meeting Day";
+
+/* Class = "UILabel"; text = "Allowed file formats are .png, .jpg and .jpeg."; ObjectID = "U5h-Th-vfP"; */
+"U5h-Th-vfP.text" = "Allowed file formats are .png, .jpg and .jpeg.";
+
+/* Class = "UILabel"; text = "REFERRALS"; ObjectID = "Ujy-yG-kZJ"; */
+"Ujy-yG-kZJ.text" = "REFERRALS";
+
+/* Class = "UILabel"; text = "Last Name"; ObjectID = "Us8-lw-yzv"; */
+"Us8-lw-yzv.text" = "Last Name";
+
+/* Class = "UILabel"; text = "Office Phone"; ObjectID = "UyI-EN-iTM"; */
+"UyI-EN-iTM.text" = "Office Phone";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "VOn-mn-u06"; */
+"VOn-mn-u06.normalTitle" = "Done";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "VOq-EI-vpv"; */
+"VOq-EI-vpv.text" = "State";
+
+/* Class = "UITextField"; placeholder = "Job Title"; ObjectID = "VbI-Mw-hi4"; */
+"VbI-Mw-hi4.placeholder" = "Job Title";
+
+/* Class = "UILabel"; text = "No record found"; ObjectID = "VvH-IT-mRI"; */
+"VvH-IT-mRI.text" = "No record found";
+
+/* Class = "UILabel"; text = "Select All"; ObjectID = "WCY-fT-FIm"; */
+"WCY-fT-FIm.text" = "Select All";
+
+/* Class = "UILabel"; text = "Current"; ObjectID = "Wd4-dB-pkK"; */
+"Wd4-dB-pkK.text" = "Current";
+
+/* Class = "UILabel"; text = "Monetary Value"; ObjectID = "WdK-OK-Koa"; */
+"WdK-OK-Koa.text" = "Monetary Value";
+
+/* Class = "UILabel"; text = "Mobile"; ObjectID = "Whh-gc-JoU"; */
+"Whh-gc-JoU.text" = "Mobile";
+
+/* Class = "UILabel"; text = "No results found"; ObjectID = "WnY-GE-RQ3"; */
+"WnY-GE-RQ3.text" = "No results found";
+
+/* Class = "UILabel"; text = "EDIT REFERRAL"; ObjectID = "XGY-Yn-pJM"; */
+"XGY-Yn-pJM.text" = "EDIT REFERRAL";
+
+/* Class = "UILabel"; text = "First Name"; ObjectID = "Xr5-BB-lk6"; */
+"Xr5-BB-lk6.text" = "First Name";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "YFB-O7-dtp"; */
+"YFB-O7-dtp.placeholder" = "City";
+
+/* Class = "UITextField"; placeholder = "By Meeting Day"; ObjectID = "YRd-xH-Dwu"; */
+"YRd-xH-Dwu.placeholder" = "By Meeting Day";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YVh-cj-LYI"; */
+"YVh-cj-LYI.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Most Members"; ObjectID = "YnH-xl-nKf"; */
+"YnH-xl-nKf.normalTitle" = "Most Members";
+
+/* Class = "UILabel"; text = "Select a Contact:"; ObjectID = "Z6H-Aq-AOS"; */
+"Z6H-Aq-AOS.text" = "Select a Contact:";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "ZQr-lk-ybC"; */
+"ZQr-lk-ybC.text" = "Country";
+
+/* Class = "UITextField"; placeholder = "Select Country"; ObjectID = "Zoc-Cm-ytq"; */
+"Zoc-Cm-ytq.placeholder" = "Select Country";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "a2H-xy-Gwe"; */
+"a2H-xy-Gwe.text" = "City";
+
+/* Class = "UILabel"; text = "Email Address"; ObjectID = "a5U-X7-diK"; */
+"a5U-X7-diK.text" = "Email Address";
+
+/* Class = "UILabel"; text = "$"; ObjectID = "aPN-ge-4Bn"; */
+"aPN-ge-4Bn.text" = "$";
+
+/* Class = "UITextField"; placeholder = "Select State"; ObjectID = "aPY-nm-kCE"; */
+"aPY-nm-kCE.placeholder" = "Select State";
+
+/* Class = "UILabel"; text = "MESSAGE"; ObjectID = "adU-Gw-nRP"; */
+"adU-Gw-nRP.text" = "MESSAGE";
+
+/* Class = "UILabel"; text = "Allowed file formats are .png, .jpg and .jpeg."; ObjectID = "bAZ-3x-dGV"; */
+"bAZ-3x-dGV.text" = "Allowed file formats are .png, .jpg and .jpeg.";
+
+/* Class = "UILabel"; text = "Message from Sender\n"; ObjectID = "bCg-Cl-7le"; */
+"bCg-Cl-7le.text" = "Message from Sender\n";
+
+/* Class = "UILabel"; text = "Website"; ObjectID = "bFS-Bv-mx5"; */
+"bFS-Bv-mx5.text" = "Website";
+
+/* Class = "UILabel"; text = "Email Address"; ObjectID = "bSE-Lx-pDp"; */
+"bSE-Lx-pDp.text" = "Email Address";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "bfY-5G-MQ9"; */
+"bfY-5G-MQ9.text" = "City";
+
+/* Class = "UILabel"; text = "Job Title"; ObjectID = "bgy-Bl-5sm"; */
+"bgy-Bl-5sm.text" = "Job Title";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "c7O-qB-0WO"; */
+"c7O-qB-0WO.text" = "Address";
+
+/* Class = "UILabel"; text = "REFERRALS"; ObjectID = "cAO-MK-d2x"; */
+"cAO-MK-d2x.text" = "REFERRALS";
+
+/* Class = "UITextField"; placeholder = "Select State"; ObjectID = "cc0-tz-Jta"; */
+"cc0-tz-Jta.placeholder" = "Select State";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "chM-JM-coy"; */
+"chM-JM-coy.normalTitle" = "CANCEL";
+
+/* Class = "UITextField"; placeholder = "By Meeting Time"; ObjectID = "cp8-ti-WnK"; */
+"cp8-ti-WnK.placeholder" = "By Meeting Time";
+
+/* Class = "UITextField"; placeholder = "0"; ObjectID = "ddc-Bs-lBI"; */
+"ddc-Bs-lBI.placeholder" = "0";
+
+/* Class = "UITextField"; placeholder = "Select an existing contact"; ObjectID = "dil-yo-yie"; */
+"dil-yo-yie.placeholder" = "Select an existing contact";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eB2-vB-fPV"; */
+"eB2-vB-fPV.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "CURRENT TEAM"; ObjectID = "eJw-0a-vAE"; */
+"eJw-0a-vAE.normalTitle" = "CURRENT TEAM";
+
+/* Class = "UILabel"; text = "Last Name"; ObjectID = "eLW-5T-Kfk"; */
+"eLW-5T-Kfk.text" = "Last Name";
+
+/* Class = "UITextField"; placeholder = "Company"; ObjectID = "eRb-SK-G9N"; */
+"eRb-SK-G9N.placeholder" = "Company";
+
+/* Class = "UITextField"; placeholder = "Office Phone"; ObjectID = "eaL-fO-Qm0"; */
+"eaL-fO-Qm0.placeholder" = "Office Phone";
+
+/* Class = "UILabel"; text = "Gold Member"; ObjectID = "egS-sc-g9g"; */
+"egS-sc-g9g.text" = "Gold Member";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "esE-bX-HNB"; */
+"esE-bX-HNB.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Company"; ObjectID = "esl-6a-SWJ"; */
+"esl-6a-SWJ.placeholder" = "Company";
+
+/* Class = "UIButton"; normalTitle = "SENT ARCHIVE"; ObjectID = "ewb-rb-Pqw"; */
+"ewb-rb-Pqw.normalTitle" = "SENT ARCHIVE";
+
+/* Class = "UIButton"; normalTitle = "SENT ARCHIVE"; ObjectID = "fMH-hB-7wn"; */
+"fMH-hB-7wn.normalTitle" = "SENT ARCHIVE";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "feX-jv-KBL"; */
+"feX-jv-KBL.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "SENT"; ObjectID = "fiA-Om-Hcx"; */
+"fiA-Om-Hcx.normalTitle" = "SENT";
+
+/* Class = "UILabel"; text = "No record found"; ObjectID = "fkG-FY-zMB"; */
+"fkG-FY-zMB.text" = "No record found";
+
+/* Class = "UITextField"; placeholder = "Mobile"; ObjectID = "fmo-5W-AYN"; */
+"fmo-5W-AYN.placeholder" = "Mobile";
+
+/* Class = "UILabel"; text = "By Meeting Day"; ObjectID = "g0B-Cx-VOW"; */
+"g0B-Cx-VOW.text" = "By Meeting Day";
+
+/* Class = "UITextField"; placeholder = "Address"; ObjectID = "gwV-t4-mwc"; */
+"gwV-t4-mwc.placeholder" = "Address";
+
+/* Class = "UILabel"; text = "No Comments"; ObjectID = "hEA-nb-hBd"; */
+"hEA-nb-hBd.text" = "No Comments";
+
+/* Class = "UIButton"; normalTitle = "INBOX ARCHIVE"; ObjectID = "hHb-uS-pWq"; */
+"hHb-uS-pWq.normalTitle" = "INBOX ARCHIVE";
+
+/* Class = "UILabel"; text = "No results found"; ObjectID = "hoC-DL-a5l"; */
+"hoC-DL-a5l.text" = "No results found";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hr6-Fm-Ima"; */
+"hr6-Fm-Ima.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "iR8-1m-PoJ"; */
+"iR8-1m-PoJ.normalTitle" = "Send";
+
+/* Class = "UIButton"; normalTitle = "PARTNERS"; ObjectID = "iTe-z2-Jwp"; */
+"iTe-z2-Jwp.normalTitle" = "PARTNERS";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "iq2-Ir-eX6"; */
+"iq2-Ir-eX6.text" = "Country";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "jth-gz-9EO"; */
+"jth-gz-9EO.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "kRo-Mp-I2v"; */
+"kRo-Mp-I2v.text" = "State";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kVE-aO-E9S"; */
+"kVE-aO-E9S.text" = "Label";
+
+/* Class = "UITextView"; text = "You've been invited by john to be a part of FoxHopr network. Sign up today and get FoxHopping."; ObjectID = "klU-Vm-diw"; */
+"klU-Vm-diw.text" = "You've been invited by john to be a part of FoxHopr network. Sign up today and get FoxHopping.";
+
+/* Class = "UILabel"; text = "REFERRALS"; ObjectID = "kmh-2a-XuO"; */
+"kmh-2a-XuO.text" = "REFERRALS";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "kww-3L-rUv"; */
+"kww-3L-rUv.placeholder" = "New Password";
+
+/* Class = "UILabel"; text = "MEMBER DETAILS"; ObjectID = "l3W-WZ-Uzc"; */
+"l3W-WZ-Uzc.text" = "MEMBER DETAILS";
+
+/* Class = "UIButton"; normalTitle = "RECEIVED"; ObjectID = "lKv-rt-Qi4"; */
+"lKv-rt-Qi4.normalTitle" = "RECEIVED";
+
+/* Class = "UILabel"; text = "New Password"; ObjectID = "lfd-lq-vRh"; */
+"lfd-lq-vRh.text" = "New Password";
+
+/* Class = "UIButton"; normalTitle = "APPLY"; ObjectID = "m00-nN-z8V"; */
+"m00-nN-z8V.normalTitle" = "APPLY";
+
+/* Class = "UILabel"; text = "JUN, 25 2015"; ObjectID = "m6Y-cy-Q4P"; */
+"m6Y-cy-Q4P.text" = "JUN, 25 2015";
+
+/* Class = "UIButton"; normalTitle = "POST"; ObjectID = "mFz-Cr-uG7"; */
+"mFz-Cr-uG7.normalTitle" = "POST";
+
+/* Class = "UIButton"; normalTitle = "NEXT"; ObjectID = "mm3-Yt-Fpb"; */
+"mm3-Yt-Fpb.normalTitle" = "NEXT";
+
+/* Class = "UILabel"; text = "Profile Status : 74%"; ObjectID = "nIz-W9-Ftc"; */
+"nIz-W9-Ftc.text" = "Profile Status : 74%";
+
+/* Class = "UILabel"; text = "Company"; ObjectID = "nS4-S7-itm"; */
+"nS4-S7-itm.text" = "Company";
+
+/* Class = "UILabel"; text = "Message from Sender"; ObjectID = "nim-m8-dVM"; */
+"nim-m8-dVM.text" = "Message from Sender";
+
+/* Class = "UILabel"; text = "No Comments"; ObjectID = "nnw-Si-OK9"; */
+"nnw-Si-OK9.text" = "No Comments";
+
+/* Class = "UILabel"; text = "State"; ObjectID = "ntU-1F-OoU"; */
+"ntU-1F-OoU.text" = "State";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "o9K-kG-E4z"; */
+"o9K-kG-E4z.text" = "City";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "oFJ-v1-Z5P"; */
+"oFJ-v1-Z5P.placeholder" = "Email Address";
+
+/* Class = "UILabel"; text = "Send To"; ObjectID = "oex-3r-2RY"; */
+"oex-3r-2RY.text" = "Send To";
+
+/* Class = "UILabel"; text = "Email Address"; ObjectID = "ox6-MW-bZA"; */
+"ox6-MW-bZA.text" = "Email Address";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "piz-RC-Ap3"; */
+"piz-RC-Ap3.text" = "Label";
+
+/* Class = "UILabel"; text = "By Meeting Time"; ObjectID = "pmU-WW-VdO"; */
+"pmU-WW-VdO.text" = "By Meeting Time";
+
+/* Class = "UIButton"; normalTitle = "SEND"; ObjectID = "pnG-XD-bQh"; */
+"pnG-XD-bQh.normalTitle" = "SEND";
+
+/* Class = "UIButton"; normalTitle = "Create a New Contact"; ObjectID = "pnd-AT-5f7"; */
+"pnd-AT-5f7.normalTitle" = "Create a New Contact";
+
+/* Class = "UILabel"; text = "Chat with Member"; ObjectID = "prA-rs-NUU"; */
+"prA-rs-NUU.text" = "Chat with Member";
+
+/* Class = "UITextField"; placeholder = "ZIP Code"; ObjectID = "pzv-mv-gG2"; */
+"pzv-mv-gG2.placeholder" = "ZIP Code";
+
+/* Class = "UITextField"; placeholder = "Office Phone"; ObjectID = "qgP-aW-KOJ"; */
+"qgP-aW-KOJ.placeholder" = "Office Phone";
+
+/* Class = "UILabel"; text = "Current Password"; ObjectID = "qlv-Ru-Bsj"; */
+"qlv-Ru-Bsj.text" = "Current Password";
+
+/* Class = "UILabel"; text = "Referral Status: "; ObjectID = "r2S-wn-LF2"; */
+"r2S-wn-LF2.text" = "Referral Status: ";
+
+/* Class = "UITextField"; placeholder = "Job Title"; ObjectID = "re1-pf-Rs2"; */
+"re1-pf-Rs2.placeholder" = "Job Title";
+
+/* Class = "UITextField"; placeholder = "Referral Status"; ObjectID = "sLN-4d-IHd"; */
+"sLN-4d-IHd.placeholder" = "Referral Status";
+
+/* Class = "UITextField"; placeholder = "Website"; ObjectID = "sV5-1M-XKk"; */
+"sV5-1M-XKk.placeholder" = "Website";
+
+/* Class = "UITextField"; placeholder = "Location"; ObjectID = "t7g-ce-qiV"; */
+"t7g-ce-qiV.placeholder" = "Location";
+
+/* Class = "UITextField"; placeholder = "Mobile"; ObjectID = "tCg-Ow-vIJ"; */
+"tCg-Ow-vIJ.placeholder" = "Mobile";
+
+/* Class = "UIButton"; normalTitle = "GOALS"; ObjectID = "tHv-zF-6zK"; */
+"tHv-zF-6zK.normalTitle" = "GOALS";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "tL4-XH-fM1"; */
+"tL4-XH-fM1.normalTitle" = "CANCEL";
+
+/* Class = "UITextField"; placeholder = "Current Password"; ObjectID = "tTE-6P-Ope"; */
+"tTE-6P-Ope.placeholder" = "Current Password";
+
+/* Class = "UILabel"; text = "REFERRALS"; ObjectID = "tgB-tE-e8D"; */
+"tgB-tE-e8D.text" = "REFERRALS";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tsW-x5-PMg"; */
+"tsW-x5-PMg.text" = "Label";
+
+/* Class = "UILabel"; text = "REFERRALS"; ObjectID = "u2D-Wi-Lc4"; */
+"u2D-Wi-Lc4.text" = "REFERRALS";
+
+/* Class = "UIButton"; normalTitle = "RECEIVED ARCHIVE"; ObjectID = "u6x-hP-PID"; */
+"u6x-hP-PID.normalTitle" = "RECEIVED ARCHIVE";
+
+/* Class = "UILabel"; text = "No record found"; ObjectID = "uD5-pV-wEB"; */
+"uD5-pV-wEB.text" = "No record found";
+
+/* Class = "UILabel"; text = "Subject"; ObjectID = "uDc-WL-MYK"; */
+"uDc-WL-MYK.text" = "Subject";
+
+/* Class = "UITextField"; placeholder = "By Meeting Time"; ObjectID = "uh9-RS-NxV"; */
+"uh9-RS-NxV.placeholder" = "By Meeting Time";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "ulu-Yi-c6k"; */
+"ulu-Yi-c6k.placeholder" = "City";
+
+/* Class = "UILabel"; text = "Office Phone"; ObjectID = "w4T-bo-fu0"; */
+"w4T-bo-fu0.text" = "Office Phone";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wCv-oe-QsJ"; */
+"wCv-oe-QsJ.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Website"; ObjectID = "xVB-gL-v2i"; */
+"xVB-gL-v2i.placeholder" = "Website";
+
+/* Class = "UIButton"; normalTitle = "CONTACTS"; ObjectID = "yIg-Gr-p0C"; */
+"yIg-Gr-p0C.normalTitle" = "CONTACTS";
+
+/* Class = "UILabel"; text = "ZIP Code"; ObjectID = "yOK-Z8-zo3"; */
+"yOK-Z8-zo3.text" = "ZIP Code";
+
+/* Class = "UILabel"; text = "First Name"; ObjectID = "yiK-HV-NJh"; */
+"yiK-HV-NJh.text" = "First Name";
+
+/* Class = "UITextField"; placeholder = "City"; ObjectID = "yju-OL-mCm"; */
+"yju-OL-mCm.placeholder" = "City";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "yzJ-om-Cix"; */
+"yzJ-om-Cix.placeholder" = "First Name";
+
+/* Class = "UILabel"; text = "No attachments found."; ObjectID = "zXX-dg-JxD"; */
+"zXX-dg-JxD.text" = "No attachments found.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zfk-p5-iZK"; */
+"zfk-p5-iZK.text" = "Label";

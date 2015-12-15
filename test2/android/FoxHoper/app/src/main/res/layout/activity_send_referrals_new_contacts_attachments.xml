@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg_color"
+    android:orientation="vertical" >
+    <include
+        layout="@layout/layout_app_back_header"
+        />
+    <com.app.foxhopr.custom.view.BounceScrollView
+        android:layout_width="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/login_bg_color"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+
+
+            android:orientation="vertical" >
+            <include
+                layout="@layout/layout_compose_new_contact_step_two"
+                />
+        </LinearLayout>
+    </com.app.foxhopr.custom.view.BounceScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+    <ImageView
+        android:layout_marginLeft="0.5dp"
+        android:id="@+id/iconrating"
+        android:layout_width="@dimen/group_user_height"
+        android:layout_height="@dimen/group_user_width"
+        />
+</LinearLayout>

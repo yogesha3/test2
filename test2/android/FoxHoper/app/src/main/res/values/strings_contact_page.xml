@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_contact">CONTACTS</string>
+    <string name="str_partner">PARTNERS</string>
+    <string name="str_invite_partner">INVITE PARTNERS</string>
+
+    <!--Invite Partner-->
+    <string name="str_partner_name">Partner Name</string>
+    <string name="str_partner_email">Partner Email</string>
+    <string name="str_partner_add">Add</string>
+    <string name="str_partner_message">Message</string>
+    <string name="str_send_invitation">Send Invitations</string>
+    <string name="str_update_contact">UPDATE CONTACT</string>
+    <string name="str_add_a_contact">ADD A CONTACT</string>
+    <string name="str_details_a_contact">CONTACT DETAIL</string>
+    <string name="str_edit_a_contact">EDIT CONTACT</string>
+    <string name="str_invite_partner_message">You\'ve been invited by %1$s to be a part for FoxHopr network. Sign up today and get FoxHopping.</string>
+</resources>
